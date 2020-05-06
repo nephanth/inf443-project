@@ -15,7 +15,8 @@ void scene_model::setup_data(std::map<std::string,GLuint>& , scene_structure& , 
     // Create a surface with (u,v)-texture coordinates
     mesh surface_cpu;
     surface_cpu.position     = {{-1,-1,0}, { 1,-1,0}, { 1, 1,0}, {-1, 1,0}};
-    surface_cpu.texture_uv   = {{0,1}, {1,1}, {1,0}, {0,0}};
+    // surface_cpu.texture_uv   = {{0,1}, {1,1}, {1,0}, {0,0}};
+    surface_cpu.texture_uv   = {{0,0.5}, {0.5,0.5}, {0.5,0}, {0,0}};
     surface_cpu.connectivity = {{0,1,2}, {0,2,3}};
 
     surface = surface_cpu;

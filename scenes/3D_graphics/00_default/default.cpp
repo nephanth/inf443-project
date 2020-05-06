@@ -35,6 +35,13 @@ void scene_model::setup_data(std::map<std::string,GLuint>& shaders, scene_struct
     // Example of uniform parameter setting: color of the shape (used in the shader)
     surface.uniform.color = {1.0f, 1.0f, 0.6f};
 
+    //create a mesh sphere
+    mesh sphere_cpu = mesh_primitive_sphere();
+    sphere = mesh_drawable(sphere_cpu);
+    sphere.uniform.color = {1, 0, 0};
+    sphere.uniform.transform.translation = {-.1f,.5f,.25f};
+    sphere.uniform.transform.scaling = .1f;
+    sphere.shader = shaders["mesh"];
 
 }
 
@@ -48,8 +55,13 @@ void scene_model::frame_draw(std::map<std::string,GLuint>& shaders, scene_struct
     // Drawing call: need to provide the camera information (use the default shader if it has been set previously)
     draw(surface, scene.camera);
 
+    sphere.uniform.color = {1,1,0};
+    sphere.uniform.transform.translation = {0,0,0.5};
+    draw(sphere, scene.camera);
 
-
+    sphere.uniform.color = {0,0,1};
+    sphere.uniform.transform.translation = {1,0,0.5};
+    draw(sphere, scene.camera);
 
 }
 

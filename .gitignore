@@ -1,0 +1,6 @@
+.clangd/*
+.clangd
+*.o
+*.idx
+./pgm
+

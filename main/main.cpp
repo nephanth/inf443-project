@@ -1,4 +1,3 @@
-
 // Include VCL library
 #include "vcl/vcl.hpp"
 
@@ -9,6 +8,9 @@
 #include "scenes/scenes.hpp"
 
 
+#include <cmath>
+#include <cstdio>
+#include <cstdlib>
 
 // ************************************** //
 // Global data declaration

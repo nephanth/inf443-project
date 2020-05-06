@@ -129,29 +129,6 @@ mesh create_grid(const gui_scene_structure& gui_scene)
 void scene_model::set_gui()
 {
     ImGui::Checkbox("Wireframe", &gui_scene.wireframe);
-
-    ImGui::Separator();
-    ImGui::Text("Perlin parameters");
-
-    float height_min = 0.1f;
-    float height_max = 2.0f;
-    if( ImGui::SliderScalar("Height", ImGuiDataType_Float, &gui_scene.height, &height_min, &height_max) )
-        update_terrain();
-
-    float scaling_min = 0.1f;
-    float scaling_max = 10.0f;
-    if( ImGui::SliderScalar("(u,v) Scaling", ImGuiDataType_Float, &gui_scene.scaling, &scaling_min, &scaling_max) )
-        update_terrain();
-
-    int octave_min = 1;
-    int octave_max = 10;
-    if( ImGui::SliderScalar("Octave", ImGuiDataType_S32, &gui_scene.octave, &octave_min, &octave_max) )
-        update_terrain();
-
-    float persistency_min = 0.1f;
-    float persistency_max = 0.9f;
-    if( ImGui::SliderScalar("Persistency", ImGuiDataType_Float, &gui_scene.persistency, &persistency_min, &persistency_max) )
-        update_terrain();
 }
 
 

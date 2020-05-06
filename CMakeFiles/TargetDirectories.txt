@@ -1,0 +1,3 @@
+/home/tris/Devoirs/current/INF443/inf443_vcl/CMakeFiles/rebuild_cache.dir
+/home/tris/Devoirs/current/INF443/inf443_vcl/CMakeFiles/pgm.dir
+/home/tris/Devoirs/current/INF443/inf443_vcl/CMakeFiles/edit_cache.dir
