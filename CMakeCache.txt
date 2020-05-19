@@ -28,15 +28,16 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/ccache
 
-//A wrapper around 'ar' adding the appropriate '--plugin' option
-// for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar
+//LLVM archiver
+CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/llvm-ar
 
-//A wrapper around 'ranlib' adding the appropriate '--plugin' option
-// for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib
+//First argument to CXX compiler
+CMAKE_CXX_COMPILER_ARG1:STRING= clang++
+
+//Generate index for LLVM archive
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/llvm-ranlib
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -80,7 +81,7 @@ CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Path to a program.
-CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
+CMAKE_DLLTOOL:FILEPATH=/usr/bin/llvm-dlltool
 
 //Flags used by the linker during all build types.
 CMAKE_EXE_LINKER_FLAGS:STRING=
@@ -98,7 +99,7 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Enable/Disable output of compile commands during generation.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=1
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
@@ -234,7 +235,7 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=17
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=0
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=2
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.

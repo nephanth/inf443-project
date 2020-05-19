@@ -34,7 +34,7 @@ mesh create_cone(float radius, float height, float z_offset);
 mesh create_tree_foliage(float radius, float height, float z_offset, float z0 = 0);
 // mesh create_tree(float radius_trunk, float height_trunk, float radius_fol);
 mesh create_tree(float radius_trunk, float height_trunk, float radius_fol, float height_fol, float offset_fol);
-mesh create_billboard(float length=0.4f, float height=0.4f);
+mesh create_billboard(float length=.6f, float height=0.6f, bool flat=false);
 
 /** This function is called before the beginning of the animation loop
     It is used to initialize all part-specific data */
@@ -51,6 +51,8 @@ void scene_model::setup_data(std::map<std::string,GLuint>& , scene_structure& sc
     flower_texture_id = create_texture_gpu( image_load_png("scenes/3D_graphics/01_modeling/textures/flower.png"), GL_REPEAT, GL_REPEAT );
 
     tree_number = 12;
+    plant_number = 42;
+    flower_number = 12;
 
     update_positions();
 
@@ -59,15 +61,13 @@ void scene_model::setup_data(std::map<std::string,GLuint>& , scene_structure& sc
     trunk.uniform.color = { .5f, .25f, .1f };
     foliage = create_tree_foliage(.6,.7,.5, height_trunk );
     foliage.uniform.color = {0.6f,0.95f,0.5f};
+    trunk.uniform.shading.specular = 0.05f; 
+    foliage.uniform.shading.specular = 0.05f; 
 
     plant = create_billboard();
-    flower = create_billboard();
-
-    // cylinder = create_cylinder(.5, 2);
-    // cone = create_cone(4, 2, 0);
-// float radius_trunk, float height_trunk, float radius_fol, float height_fol)
-    // tree = create_tree(.2, 1, .6, .7, .5);
-
+    flower = create_billboard(.6f, 1.2f, true);
+    plant.uniform.shading = {1,0,0}; // set pure ambiant component (no diffuse, no specular) - allow to only see the color of the texture
+    flower.uniform.shading = {1,0,0}; 
 
     // Setup initial camera mode and position
     scene.camera.camera_type = camera_control_spherical_coordinates;
@@ -84,6 +84,10 @@ void scene_model::setup_data(std::map<std::string,GLuint>& , scene_structure& sc
 void scene_model::frame_draw(std::map<std::string,GLuint>& shaders, scene_structure& scene, gui_structure& )
 {
     set_gui();
+
+    const mat3 Identity = mat3::identity();
+    const mat3 R = rotation_from_axis_angle_mat3({0,0,1}, 3.14f/2.0f); // orthogonal rotation
+    const mat3 R2 = rotation_from_axis_angle_mat3({1,0,0}, - 3.14f/2.0f); // orthogonal rotation
 
     glEnable( GL_POLYGON_OFFSET_FILL ); // avoids z-fighting when displaying wireframe
 
@@ -119,15 +123,36 @@ void scene_model::frame_draw(std::map<std::string,GLuint>& shaders, scene_struct
 
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-
+    //
 
     // Disable depth buffer writing
     //  - Transparent elements cannot use depth buffer
     //  - They are supposed to be display from furest to nearest elements
     glDepthMask(false);
 
+    glBindTexture(GL_TEXTURE_2D, plant_texture_id);
+
+    // draw(plant, scene.camera, shader);
+    for(auto position : plant_positions){
+        plant.uniform.transform.translation = position;
+        plant.uniform.transform.rotation = Identity;
+        draw(plant, scene.camera, shader);
+        plant.uniform.transform.rotation = R;
+        draw(plant, scene.camera, shader);
+    }
+
+    glBindTexture(GL_TEXTURE_2D, flower_texture_id);
+    // flower.uniform.transform.rotation = scene.camera.orientation ;
+    // draw(flower, scene.camera, shader);
+    for(auto position : flower_positions){
+        flower.uniform.transform.translation = position;
+        flower.uniform.transform.rotation = scene.camera.orientation;
+        draw(flower, scene.camera, shader);
+    }
 
     glBindTexture(GL_TEXTURE_2D, scene.texture_white);
+
+    glDepthMask(true);
 
 }
 
@@ -326,12 +351,28 @@ mesh create_tree_foliage(float radius, float height, float z_offset, float z0)
 //     return m;
 // }
 
-mesh create_billboard(float length, float height){
-    const float l = length / .2f;
+mesh create_billboard(float length, float height, bool flat){
+    const float l = length / 2.f;
+
     mesh surface_cpu;
-    surface_cpu.position     = {{-l,0,0}, { l ,0,0}, { -l, height,0}, {l, height,0}};
-    surface_cpu.texture_uv   = {{0,1}, {1,1}, {1,0}, {0,0}};
-    surface_cpu.connectivity = {{0,1,2}, {0,2,3}};
+
+    if(flat){
+        surface_cpu.position     = {{-l,0,0}, { l ,0,0}, {l, height,0}, {-l, height, 0}};
+        surface_cpu.texture_uv   = {{0,1}, {1,1}, {1,0}, {0,0}};
+        surface_cpu.connectivity = {{0,1,2}, {0,2,3}};
+
+    }
+    else {
+        surface_cpu.position     = {{0,-l,0}, { 0 ,l,0}, {0, l,height}, {0, -l, height}};
+        surface_cpu.texture_uv   = {{0,1}, {1,1}, {1,0}, {0,0}};
+        surface_cpu.connectivity = {{0,1,2}, {0,2,3}};
+
+    }
+
+    // mesh surface_cpu;
+    // surface_cpu.position     = {{-0.2f,0,0}, { 0.2f,0,0}, { 0.2f, 0.4f,0}, {-0.2f, 0.4f,0}};
+    // surface_cpu.texture_uv   = {{0,1}, {1,1}, {1,0}, {0,0}};
+    // surface_cpu.connectivity = {{0,1,2}, {0,2,3}};
     return surface_cpu;
 }
 

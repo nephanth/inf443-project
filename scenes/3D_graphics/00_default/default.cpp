@@ -59,10 +59,6 @@ void scene_model::frame_draw(std::map<std::string,GLuint>& shaders, scene_struct
     sphere.uniform.transform.translation = {0,0,0.5};
     draw(sphere, scene.camera);
 
-    sphere.uniform.color = {0,0,1};
-    sphere.uniform.transform.translation = {1,0,0.5};
-    draw(sphere, scene.camera);
-
 }
 
 
