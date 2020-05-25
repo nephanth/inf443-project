@@ -32,7 +32,9 @@ file(
     scenes/*.[ch]pp
     scenes/*.glsl
     )
+add_executable(pgm ${source_files})
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 
 if(UNIX)
@@ -43,3 +45,4 @@ if(WIN32)
     source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${source_files}) # Allow to explore source directories as a tree
     target_link_libraries(pgm ${GLFW_LIBRARIES})
 endif()
+

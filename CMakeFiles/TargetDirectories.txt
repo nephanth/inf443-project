@@ -1,0 +1,3 @@
+/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles/rebuild_cache.dir
+/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles/edit_cache.dir
+/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles/pgm.dir

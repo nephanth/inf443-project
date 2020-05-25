@@ -37,9 +37,8 @@ void scene_model::frame_draw(std::map<std::string,GLuint>& shaders, scene_struct
     // Before displaying a textured surface: bind the associated texture id
     glBindTexture(GL_TEXTURE_2D, texture_id);
 
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
-
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT); 
     draw(surface, scene.camera, shaders["mesh"]);
 
     // After the surface is displayed it is safe to set the texture id to a white image

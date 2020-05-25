@@ -1,0 +1,367 @@
+[
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/main/helper_scene/helper_scene.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/main/helper_scene/helper_scene.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/main/helper_scene/helper_scene.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/main/main.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/main/main.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/main/main.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/main/scene_base/base.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/main/scene_base/base.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/main/scene_base/base.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/00_default/Hitbox.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/00_default/Hitbox.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/default.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/00_default/default.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/00_default/default.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/scenes/3D_graphics/01_modeling/modeling.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/01_modeling/modeling.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/01_modeling/modeling.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_billboard.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/02_texture/example_billboard.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/02_texture/example_billboard.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_perlin.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/02_texture/example_perlin.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/02_texture/example_perlin.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_texture.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/02_texture/example_texture.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/02_texture/example_texture.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/03_animation/articulated_hierarchy.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/03_animation/articulated_hierarchy.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/interpolation_position.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/03_animation/interpolation_position.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/03_animation/interpolation_position.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_mass_spring.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/04_simulation/example_mass_spring.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/04_simulation/example_mass_spring.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/third_party/glad/src/glad.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/third_party/glad/src/glad.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/third_party/glad/src/glad.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/third_party/imgui/imgui.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/third_party/imgui/imgui.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/third_party/imgui/imgui.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/third_party/imgui/imgui_demo.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/third_party/imgui/imgui_demo.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/third_party/imgui/imgui_demo.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/third_party/imgui/imgui_draw.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/third_party/imgui/imgui_draw.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/third_party/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_glfw.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/third_party/imgui/imgui_impl_glfw.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/third_party/imgui/imgui_impl_glfw.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_opengl3.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/third_party/imgui/imgui_impl_opengl3.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/third_party/imgui/imgui_impl_opengl3.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/third_party/imgui/imgui_widgets.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/third_party/imgui/imgui_widgets.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/third_party/imgui/imgui_widgets.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/third_party/lodepng/lodepng.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/third_party/lodepng/lodepng.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/third_party/lodepng/lodepng.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/third_party/simplexnoise/simplexnoise1234.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/third_party/simplexnoise/simplexnoise1234.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/third_party/simplexnoise/simplexnoise1234.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/base/basic_types/basic_types.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/base/basic_types/basic_types.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/base/basic_types/basic_types.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/base/error/error.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/base/error/error.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/base/error/error.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/base/file/file.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/base/file/file.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/base/file/file.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/base/rand/rand.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/base/rand/rand.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/base/rand/rand.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/base/string/string.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/base/string/string.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/base/string/string.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/interaction/camera/camera.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/camera/camera.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/camera/camera.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/camera_control_glfw/camera_control_glfw.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/camera_control_glfw/camera_control_glfw.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/interaction/picking/info/picking_info.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/picking/info/picking_info.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/picking/info/picking_info.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/interaction/picking/primitives/picking_primitives.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/picking/primitives/picking_primitives.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/picking/primitives/picking_primitives.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/interaction/picking/ray/picking_ray.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/picking/ray/picking_ray.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/picking/ray/picking_ray.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/interaction/screen_motion/screen_motion.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/screen_motion/screen_motion.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/screen_motion/screen_motion.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/interaction/time_period/time_period.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/time_period/time_period.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/time_period/time_period.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/interaction/time_slider/time_slider.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/time_slider/time_slider.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/time_slider/time_slider.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/math/helper_functions/linspace/linspace.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/helper_functions/linspace/linspace.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/helper_functions/linspace/linspace.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/math/helper_functions/norm/norm.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/helper_functions/norm/norm.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/helper_functions/norm/norm.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/math/mat/mat2/mat2.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat2/mat2.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat2/mat2.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/math/mat/mat3/mat3.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat3/mat3.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat3/mat3.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/math/mat/mat4/mat4.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat4/mat4.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat4/mat4.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/math/transformation/affine_transform/affine_transform.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/transformation/affine_transform/affine_transform.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/transformation/affine_transform/affine_transform.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/math/transformation/special_transform/special_transform.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/transformation/special_transform/special_transform.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/transformation/special_transform/special_transform.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/math/vec/vec2/vec2.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/vec/vec2/vec2.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/vec/vec2/vec2.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/math/vec/vec3/vec3.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/vec/vec3/vec3.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/vec/vec3/vec3.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/math/vec/vec4/vec4.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/vec/vec4/vec4.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/vec/vec4/vec4.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/opengl/debug/opengl_debug.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/debug/opengl_debug.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/debug/opengl_debug.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/opengl/shader/shader.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/shader/shader.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/shader/shader.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/opengl/texture/image/image.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/texture/image/image.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/texture/image/image.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/opengl/texture/texture_gpu/texture_gpu.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/texture/texture_gpu/texture_gpu.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/texture/texture_gpu/texture_gpu.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/opengl/uniform/uniform.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/uniform/uniform.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/uniform/uniform.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/shape/curve/curve_drawable/curve_drawable.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_drawable/curve_drawable.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_drawable/curve_drawable.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/shape/curve/curve_gpu/curve_gpu.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_gpu/curve_gpu.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_gpu/curve_gpu.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/shape/curve/curve_primitive/curve_primitive.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_primitive/curve_primitive.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_primitive/curve_primitive.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_loader/obj/obj.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_loader/obj/obj.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_loader/obj/obj.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_structure/mesh.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_structure/mesh.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_structure/mesh.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segments_drawable/segments_drawable.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segments_drawable/segments_drawable.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/shape/segment/segments_gpu/segments_gpu.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segments_gpu/segments_gpu.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segments_gpu/segments_gpu.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/wrapper/glfw/events/events.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/glfw/events/events.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/glfw/events/events.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/wrapper/glfw/fps_counter/fps_counter.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/glfw/fps_counter/fps_counter.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/glfw/fps_counter/fps_counter.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/wrapper/glfw/window/window.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/glfw/window/window.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/glfw/window/window.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/wrapper/imgui/imgui.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/imgui/imgui.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/imgui/imgui.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/wrapper/lodepng/lodepng.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/lodepng/lodepng.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/lodepng/lodepng.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/vcl/wrapper/perlin/perlin.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/perlin/perlin.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/perlin/perlin.cpp"
+}
+]

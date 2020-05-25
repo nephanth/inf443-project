@@ -40,6 +40,9 @@ default_target: all
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Command-line flag to silence nested $(MAKE).
+$(VERBOSE)MAKESILENT = -s
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -65,10 +68,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tris/Devoirs/current/INF443/inf443_vcl
+CMAKE_SOURCE_DIR = /home/tris/Devoirs/2019-2020/INF443/project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tris/Devoirs/current/INF443/inf443_vcl
+CMAKE_BINARY_DIR = /home/tris/Devoirs/2019-2020/INF443/project
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,14 +100,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tris/Devoirs/current/INF443/inf443_vcl/CMakeFiles /home/tris/Devoirs/current/INF443/inf443_vcl/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tris/Devoirs/current/INF443/inf443_vcl/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles /home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles/progress.marks
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
 .PHONY : clean
 
 # The main clean target
@@ -114,12 +117,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -132,12 +135,12 @@ depend:
 
 # Build rule for target.
 pgm: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pgm
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pgm
 .PHONY : pgm
 
 # fast build rule for target.
 pgm/fast:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/build
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/build
 .PHONY : pgm/fast
 
 main/helper_scene/helper_scene.o: main/helper_scene/helper_scene.cpp.o
@@ -146,7 +149,7 @@ main/helper_scene/helper_scene.o: main/helper_scene/helper_scene.cpp.o
 
 # target to build an object file
 main/helper_scene/helper_scene.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/helper_scene/helper_scene.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/helper_scene/helper_scene.cpp.o
 .PHONY : main/helper_scene/helper_scene.cpp.o
 
 main/helper_scene/helper_scene.i: main/helper_scene/helper_scene.cpp.i
@@ -155,7 +158,7 @@ main/helper_scene/helper_scene.i: main/helper_scene/helper_scene.cpp.i
 
 # target to preprocess a source file
 main/helper_scene/helper_scene.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/helper_scene/helper_scene.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/helper_scene/helper_scene.cpp.i
 .PHONY : main/helper_scene/helper_scene.cpp.i
 
 main/helper_scene/helper_scene.s: main/helper_scene/helper_scene.cpp.s
@@ -164,7 +167,7 @@ main/helper_scene/helper_scene.s: main/helper_scene/helper_scene.cpp.s
 
 # target to generate assembly for a file
 main/helper_scene/helper_scene.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/helper_scene/helper_scene.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/helper_scene/helper_scene.cpp.s
 .PHONY : main/helper_scene/helper_scene.cpp.s
 
 main/main.o: main/main.cpp.o
@@ -173,7 +176,7 @@ main/main.o: main/main.cpp.o
 
 # target to build an object file
 main/main.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/main.cpp.o
 .PHONY : main/main.cpp.o
 
 main/main.i: main/main.cpp.i
@@ -182,7 +185,7 @@ main/main.i: main/main.cpp.i
 
 # target to preprocess a source file
 main/main.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/main.cpp.i
 .PHONY : main/main.cpp.i
 
 main/main.s: main/main.cpp.s
@@ -191,7 +194,7 @@ main/main.s: main/main.cpp.s
 
 # target to generate assembly for a file
 main/main.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/main.cpp.s
 .PHONY : main/main.cpp.s
 
 main/scene_base/base.o: main/scene_base/base.cpp.o
@@ -200,7 +203,7 @@ main/scene_base/base.o: main/scene_base/base.cpp.o
 
 # target to build an object file
 main/scene_base/base.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/scene_base/base.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/scene_base/base.cpp.o
 .PHONY : main/scene_base/base.cpp.o
 
 main/scene_base/base.i: main/scene_base/base.cpp.i
@@ -209,7 +212,7 @@ main/scene_base/base.i: main/scene_base/base.cpp.i
 
 # target to preprocess a source file
 main/scene_base/base.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/scene_base/base.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/scene_base/base.cpp.i
 .PHONY : main/scene_base/base.cpp.i
 
 main/scene_base/base.s: main/scene_base/base.cpp.s
@@ -218,8 +221,35 @@ main/scene_base/base.s: main/scene_base/base.cpp.s
 
 # target to generate assembly for a file
 main/scene_base/base.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/scene_base/base.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/scene_base/base.cpp.s
 .PHONY : main/scene_base/base.cpp.s
+
+scenes/3D_graphics/00_default/Hitbox.o: scenes/3D_graphics/00_default/Hitbox.cpp.o
+
+.PHONY : scenes/3D_graphics/00_default/Hitbox.o
+
+# target to build an object file
+scenes/3D_graphics/00_default/Hitbox.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.o
+.PHONY : scenes/3D_graphics/00_default/Hitbox.cpp.o
+
+scenes/3D_graphics/00_default/Hitbox.i: scenes/3D_graphics/00_default/Hitbox.cpp.i
+
+.PHONY : scenes/3D_graphics/00_default/Hitbox.i
+
+# target to preprocess a source file
+scenes/3D_graphics/00_default/Hitbox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.i
+.PHONY : scenes/3D_graphics/00_default/Hitbox.cpp.i
+
+scenes/3D_graphics/00_default/Hitbox.s: scenes/3D_graphics/00_default/Hitbox.cpp.s
+
+.PHONY : scenes/3D_graphics/00_default/Hitbox.s
+
+# target to generate assembly for a file
+scenes/3D_graphics/00_default/Hitbox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.s
+.PHONY : scenes/3D_graphics/00_default/Hitbox.cpp.s
 
 scenes/3D_graphics/00_default/default.o: scenes/3D_graphics/00_default/default.cpp.o
 
@@ -227,7 +257,7 @@ scenes/3D_graphics/00_default/default.o: scenes/3D_graphics/00_default/default.c
 
 # target to build an object file
 scenes/3D_graphics/00_default/default.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/default.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/default.cpp.o
 .PHONY : scenes/3D_graphics/00_default/default.cpp.o
 
 scenes/3D_graphics/00_default/default.i: scenes/3D_graphics/00_default/default.cpp.i
@@ -236,7 +266,7 @@ scenes/3D_graphics/00_default/default.i: scenes/3D_graphics/00_default/default.c
 
 # target to preprocess a source file
 scenes/3D_graphics/00_default/default.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/default.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/default.cpp.i
 .PHONY : scenes/3D_graphics/00_default/default.cpp.i
 
 scenes/3D_graphics/00_default/default.s: scenes/3D_graphics/00_default/default.cpp.s
@@ -245,7 +275,7 @@ scenes/3D_graphics/00_default/default.s: scenes/3D_graphics/00_default/default.c
 
 # target to generate assembly for a file
 scenes/3D_graphics/00_default/default.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/default.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/default.cpp.s
 .PHONY : scenes/3D_graphics/00_default/default.cpp.s
 
 scenes/3D_graphics/01_modeling/modeling.o: scenes/3D_graphics/01_modeling/modeling.cpp.o
@@ -254,7 +284,7 @@ scenes/3D_graphics/01_modeling/modeling.o: scenes/3D_graphics/01_modeling/modeli
 
 # target to build an object file
 scenes/3D_graphics/01_modeling/modeling.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/01_modeling/modeling.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/01_modeling/modeling.cpp.o
 .PHONY : scenes/3D_graphics/01_modeling/modeling.cpp.o
 
 scenes/3D_graphics/01_modeling/modeling.i: scenes/3D_graphics/01_modeling/modeling.cpp.i
@@ -263,7 +293,7 @@ scenes/3D_graphics/01_modeling/modeling.i: scenes/3D_graphics/01_modeling/modeli
 
 # target to preprocess a source file
 scenes/3D_graphics/01_modeling/modeling.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/01_modeling/modeling.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/01_modeling/modeling.cpp.i
 .PHONY : scenes/3D_graphics/01_modeling/modeling.cpp.i
 
 scenes/3D_graphics/01_modeling/modeling.s: scenes/3D_graphics/01_modeling/modeling.cpp.s
@@ -272,7 +302,7 @@ scenes/3D_graphics/01_modeling/modeling.s: scenes/3D_graphics/01_modeling/modeli
 
 # target to generate assembly for a file
 scenes/3D_graphics/01_modeling/modeling.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/01_modeling/modeling.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/01_modeling/modeling.cpp.s
 .PHONY : scenes/3D_graphics/01_modeling/modeling.cpp.s
 
 scenes/3D_graphics/02_texture/example_billboard.o: scenes/3D_graphics/02_texture/example_billboard.cpp.o
@@ -281,7 +311,7 @@ scenes/3D_graphics/02_texture/example_billboard.o: scenes/3D_graphics/02_texture
 
 # target to build an object file
 scenes/3D_graphics/02_texture/example_billboard.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_billboard.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_billboard.cpp.o
 .PHONY : scenes/3D_graphics/02_texture/example_billboard.cpp.o
 
 scenes/3D_graphics/02_texture/example_billboard.i: scenes/3D_graphics/02_texture/example_billboard.cpp.i
@@ -290,7 +320,7 @@ scenes/3D_graphics/02_texture/example_billboard.i: scenes/3D_graphics/02_texture
 
 # target to preprocess a source file
 scenes/3D_graphics/02_texture/example_billboard.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_billboard.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_billboard.cpp.i
 .PHONY : scenes/3D_graphics/02_texture/example_billboard.cpp.i
 
 scenes/3D_graphics/02_texture/example_billboard.s: scenes/3D_graphics/02_texture/example_billboard.cpp.s
@@ -299,7 +329,7 @@ scenes/3D_graphics/02_texture/example_billboard.s: scenes/3D_graphics/02_texture
 
 # target to generate assembly for a file
 scenes/3D_graphics/02_texture/example_billboard.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_billboard.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_billboard.cpp.s
 .PHONY : scenes/3D_graphics/02_texture/example_billboard.cpp.s
 
 scenes/3D_graphics/02_texture/example_perlin.o: scenes/3D_graphics/02_texture/example_perlin.cpp.o
@@ -308,7 +338,7 @@ scenes/3D_graphics/02_texture/example_perlin.o: scenes/3D_graphics/02_texture/ex
 
 # target to build an object file
 scenes/3D_graphics/02_texture/example_perlin.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_perlin.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_perlin.cpp.o
 .PHONY : scenes/3D_graphics/02_texture/example_perlin.cpp.o
 
 scenes/3D_graphics/02_texture/example_perlin.i: scenes/3D_graphics/02_texture/example_perlin.cpp.i
@@ -317,7 +347,7 @@ scenes/3D_graphics/02_texture/example_perlin.i: scenes/3D_graphics/02_texture/ex
 
 # target to preprocess a source file
 scenes/3D_graphics/02_texture/example_perlin.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_perlin.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_perlin.cpp.i
 .PHONY : scenes/3D_graphics/02_texture/example_perlin.cpp.i
 
 scenes/3D_graphics/02_texture/example_perlin.s: scenes/3D_graphics/02_texture/example_perlin.cpp.s
@@ -326,7 +356,7 @@ scenes/3D_graphics/02_texture/example_perlin.s: scenes/3D_graphics/02_texture/ex
 
 # target to generate assembly for a file
 scenes/3D_graphics/02_texture/example_perlin.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_perlin.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_perlin.cpp.s
 .PHONY : scenes/3D_graphics/02_texture/example_perlin.cpp.s
 
 scenes/3D_graphics/02_texture/example_texture.o: scenes/3D_graphics/02_texture/example_texture.cpp.o
@@ -335,7 +365,7 @@ scenes/3D_graphics/02_texture/example_texture.o: scenes/3D_graphics/02_texture/e
 
 # target to build an object file
 scenes/3D_graphics/02_texture/example_texture.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_texture.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_texture.cpp.o
 .PHONY : scenes/3D_graphics/02_texture/example_texture.cpp.o
 
 scenes/3D_graphics/02_texture/example_texture.i: scenes/3D_graphics/02_texture/example_texture.cpp.i
@@ -344,7 +374,7 @@ scenes/3D_graphics/02_texture/example_texture.i: scenes/3D_graphics/02_texture/e
 
 # target to preprocess a source file
 scenes/3D_graphics/02_texture/example_texture.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_texture.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_texture.cpp.i
 .PHONY : scenes/3D_graphics/02_texture/example_texture.cpp.i
 
 scenes/3D_graphics/02_texture/example_texture.s: scenes/3D_graphics/02_texture/example_texture.cpp.s
@@ -353,7 +383,7 @@ scenes/3D_graphics/02_texture/example_texture.s: scenes/3D_graphics/02_texture/e
 
 # target to generate assembly for a file
 scenes/3D_graphics/02_texture/example_texture.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_texture.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_texture.cpp.s
 .PHONY : scenes/3D_graphics/02_texture/example_texture.cpp.s
 
 scenes/3D_graphics/03_animation/articulated_hierarchy.o: scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.o
@@ -362,7 +392,7 @@ scenes/3D_graphics/03_animation/articulated_hierarchy.o: scenes/3D_graphics/03_a
 
 # target to build an object file
 scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.o
 .PHONY : scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.o
 
 scenes/3D_graphics/03_animation/articulated_hierarchy.i: scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.i
@@ -371,7 +401,7 @@ scenes/3D_graphics/03_animation/articulated_hierarchy.i: scenes/3D_graphics/03_a
 
 # target to preprocess a source file
 scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.i
 .PHONY : scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.i
 
 scenes/3D_graphics/03_animation/articulated_hierarchy.s: scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.s
@@ -380,7 +410,7 @@ scenes/3D_graphics/03_animation/articulated_hierarchy.s: scenes/3D_graphics/03_a
 
 # target to generate assembly for a file
 scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.s
 .PHONY : scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.s
 
 scenes/3D_graphics/03_animation/interpolation_position.o: scenes/3D_graphics/03_animation/interpolation_position.cpp.o
@@ -389,7 +419,7 @@ scenes/3D_graphics/03_animation/interpolation_position.o: scenes/3D_graphics/03_
 
 # target to build an object file
 scenes/3D_graphics/03_animation/interpolation_position.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/interpolation_position.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/interpolation_position.cpp.o
 .PHONY : scenes/3D_graphics/03_animation/interpolation_position.cpp.o
 
 scenes/3D_graphics/03_animation/interpolation_position.i: scenes/3D_graphics/03_animation/interpolation_position.cpp.i
@@ -398,7 +428,7 @@ scenes/3D_graphics/03_animation/interpolation_position.i: scenes/3D_graphics/03_
 
 # target to preprocess a source file
 scenes/3D_graphics/03_animation/interpolation_position.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/interpolation_position.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/interpolation_position.cpp.i
 .PHONY : scenes/3D_graphics/03_animation/interpolation_position.cpp.i
 
 scenes/3D_graphics/03_animation/interpolation_position.s: scenes/3D_graphics/03_animation/interpolation_position.cpp.s
@@ -407,7 +437,7 @@ scenes/3D_graphics/03_animation/interpolation_position.s: scenes/3D_graphics/03_
 
 # target to generate assembly for a file
 scenes/3D_graphics/03_animation/interpolation_position.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/interpolation_position.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/interpolation_position.cpp.s
 .PHONY : scenes/3D_graphics/03_animation/interpolation_position.cpp.s
 
 scenes/3D_graphics/04_simulation/example_mass_spring.o: scenes/3D_graphics/04_simulation/example_mass_spring.cpp.o
@@ -416,7 +446,7 @@ scenes/3D_graphics/04_simulation/example_mass_spring.o: scenes/3D_graphics/04_si
 
 # target to build an object file
 scenes/3D_graphics/04_simulation/example_mass_spring.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_mass_spring.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_mass_spring.cpp.o
 .PHONY : scenes/3D_graphics/04_simulation/example_mass_spring.cpp.o
 
 scenes/3D_graphics/04_simulation/example_mass_spring.i: scenes/3D_graphics/04_simulation/example_mass_spring.cpp.i
@@ -425,7 +455,7 @@ scenes/3D_graphics/04_simulation/example_mass_spring.i: scenes/3D_graphics/04_si
 
 # target to preprocess a source file
 scenes/3D_graphics/04_simulation/example_mass_spring.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_mass_spring.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_mass_spring.cpp.i
 .PHONY : scenes/3D_graphics/04_simulation/example_mass_spring.cpp.i
 
 scenes/3D_graphics/04_simulation/example_mass_spring.s: scenes/3D_graphics/04_simulation/example_mass_spring.cpp.s
@@ -434,7 +464,7 @@ scenes/3D_graphics/04_simulation/example_mass_spring.s: scenes/3D_graphics/04_si
 
 # target to generate assembly for a file
 scenes/3D_graphics/04_simulation/example_mass_spring.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_mass_spring.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_mass_spring.cpp.s
 .PHONY : scenes/3D_graphics/04_simulation/example_mass_spring.cpp.s
 
 scenes/3D_graphics/04_simulation/example_sphere_gravity.o: scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.o
@@ -443,7 +473,7 @@ scenes/3D_graphics/04_simulation/example_sphere_gravity.o: scenes/3D_graphics/04
 
 # target to build an object file
 scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.o
 .PHONY : scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.o
 
 scenes/3D_graphics/04_simulation/example_sphere_gravity.i: scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.i
@@ -452,7 +482,7 @@ scenes/3D_graphics/04_simulation/example_sphere_gravity.i: scenes/3D_graphics/04
 
 # target to preprocess a source file
 scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.i
 .PHONY : scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.i
 
 scenes/3D_graphics/04_simulation/example_sphere_gravity.s: scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.s
@@ -461,7 +491,7 @@ scenes/3D_graphics/04_simulation/example_sphere_gravity.s: scenes/3D_graphics/04
 
 # target to generate assembly for a file
 scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.s
 .PHONY : scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.s
 
 third_party/glad/src/glad.o: third_party/glad/src/glad.cpp.o
@@ -470,7 +500,7 @@ third_party/glad/src/glad.o: third_party/glad/src/glad.cpp.o
 
 # target to build an object file
 third_party/glad/src/glad.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/glad/src/glad.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/glad/src/glad.cpp.o
 .PHONY : third_party/glad/src/glad.cpp.o
 
 third_party/glad/src/glad.i: third_party/glad/src/glad.cpp.i
@@ -479,7 +509,7 @@ third_party/glad/src/glad.i: third_party/glad/src/glad.cpp.i
 
 # target to preprocess a source file
 third_party/glad/src/glad.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/glad/src/glad.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/glad/src/glad.cpp.i
 .PHONY : third_party/glad/src/glad.cpp.i
 
 third_party/glad/src/glad.s: third_party/glad/src/glad.cpp.s
@@ -488,7 +518,7 @@ third_party/glad/src/glad.s: third_party/glad/src/glad.cpp.s
 
 # target to generate assembly for a file
 third_party/glad/src/glad.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/glad/src/glad.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/glad/src/glad.cpp.s
 .PHONY : third_party/glad/src/glad.cpp.s
 
 third_party/imgui/imgui.o: third_party/imgui/imgui.cpp.o
@@ -497,7 +527,7 @@ third_party/imgui/imgui.o: third_party/imgui/imgui.cpp.o
 
 # target to build an object file
 third_party/imgui/imgui.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui.cpp.o
 .PHONY : third_party/imgui/imgui.cpp.o
 
 third_party/imgui/imgui.i: third_party/imgui/imgui.cpp.i
@@ -506,7 +536,7 @@ third_party/imgui/imgui.i: third_party/imgui/imgui.cpp.i
 
 # target to preprocess a source file
 third_party/imgui/imgui.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui.cpp.i
 .PHONY : third_party/imgui/imgui.cpp.i
 
 third_party/imgui/imgui.s: third_party/imgui/imgui.cpp.s
@@ -515,7 +545,7 @@ third_party/imgui/imgui.s: third_party/imgui/imgui.cpp.s
 
 # target to generate assembly for a file
 third_party/imgui/imgui.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui.cpp.s
 .PHONY : third_party/imgui/imgui.cpp.s
 
 third_party/imgui/imgui_demo.o: third_party/imgui/imgui_demo.cpp.o
@@ -524,7 +554,7 @@ third_party/imgui/imgui_demo.o: third_party/imgui/imgui_demo.cpp.o
 
 # target to build an object file
 third_party/imgui/imgui_demo.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_demo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_demo.cpp.o
 .PHONY : third_party/imgui/imgui_demo.cpp.o
 
 third_party/imgui/imgui_demo.i: third_party/imgui/imgui_demo.cpp.i
@@ -533,7 +563,7 @@ third_party/imgui/imgui_demo.i: third_party/imgui/imgui_demo.cpp.i
 
 # target to preprocess a source file
 third_party/imgui/imgui_demo.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_demo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_demo.cpp.i
 .PHONY : third_party/imgui/imgui_demo.cpp.i
 
 third_party/imgui/imgui_demo.s: third_party/imgui/imgui_demo.cpp.s
@@ -542,7 +572,7 @@ third_party/imgui/imgui_demo.s: third_party/imgui/imgui_demo.cpp.s
 
 # target to generate assembly for a file
 third_party/imgui/imgui_demo.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_demo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_demo.cpp.s
 .PHONY : third_party/imgui/imgui_demo.cpp.s
 
 third_party/imgui/imgui_draw.o: third_party/imgui/imgui_draw.cpp.o
@@ -551,7 +581,7 @@ third_party/imgui/imgui_draw.o: third_party/imgui/imgui_draw.cpp.o
 
 # target to build an object file
 third_party/imgui/imgui_draw.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_draw.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_draw.cpp.o
 .PHONY : third_party/imgui/imgui_draw.cpp.o
 
 third_party/imgui/imgui_draw.i: third_party/imgui/imgui_draw.cpp.i
@@ -560,7 +590,7 @@ third_party/imgui/imgui_draw.i: third_party/imgui/imgui_draw.cpp.i
 
 # target to preprocess a source file
 third_party/imgui/imgui_draw.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_draw.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_draw.cpp.i
 .PHONY : third_party/imgui/imgui_draw.cpp.i
 
 third_party/imgui/imgui_draw.s: third_party/imgui/imgui_draw.cpp.s
@@ -569,7 +599,7 @@ third_party/imgui/imgui_draw.s: third_party/imgui/imgui_draw.cpp.s
 
 # target to generate assembly for a file
 third_party/imgui/imgui_draw.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_draw.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_draw.cpp.s
 .PHONY : third_party/imgui/imgui_draw.cpp.s
 
 third_party/imgui/imgui_impl_glfw.o: third_party/imgui/imgui_impl_glfw.cpp.o
@@ -578,7 +608,7 @@ third_party/imgui/imgui_impl_glfw.o: third_party/imgui/imgui_impl_glfw.cpp.o
 
 # target to build an object file
 third_party/imgui/imgui_impl_glfw.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_glfw.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_glfw.cpp.o
 .PHONY : third_party/imgui/imgui_impl_glfw.cpp.o
 
 third_party/imgui/imgui_impl_glfw.i: third_party/imgui/imgui_impl_glfw.cpp.i
@@ -587,7 +617,7 @@ third_party/imgui/imgui_impl_glfw.i: third_party/imgui/imgui_impl_glfw.cpp.i
 
 # target to preprocess a source file
 third_party/imgui/imgui_impl_glfw.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_glfw.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_glfw.cpp.i
 .PHONY : third_party/imgui/imgui_impl_glfw.cpp.i
 
 third_party/imgui/imgui_impl_glfw.s: third_party/imgui/imgui_impl_glfw.cpp.s
@@ -596,7 +626,7 @@ third_party/imgui/imgui_impl_glfw.s: third_party/imgui/imgui_impl_glfw.cpp.s
 
 # target to generate assembly for a file
 third_party/imgui/imgui_impl_glfw.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_glfw.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_glfw.cpp.s
 .PHONY : third_party/imgui/imgui_impl_glfw.cpp.s
 
 third_party/imgui/imgui_impl_opengl3.o: third_party/imgui/imgui_impl_opengl3.cpp.o
@@ -605,7 +635,7 @@ third_party/imgui/imgui_impl_opengl3.o: third_party/imgui/imgui_impl_opengl3.cpp
 
 # target to build an object file
 third_party/imgui/imgui_impl_opengl3.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_opengl3.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_opengl3.cpp.o
 .PHONY : third_party/imgui/imgui_impl_opengl3.cpp.o
 
 third_party/imgui/imgui_impl_opengl3.i: third_party/imgui/imgui_impl_opengl3.cpp.i
@@ -614,7 +644,7 @@ third_party/imgui/imgui_impl_opengl3.i: third_party/imgui/imgui_impl_opengl3.cpp
 
 # target to preprocess a source file
 third_party/imgui/imgui_impl_opengl3.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_opengl3.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_opengl3.cpp.i
 .PHONY : third_party/imgui/imgui_impl_opengl3.cpp.i
 
 third_party/imgui/imgui_impl_opengl3.s: third_party/imgui/imgui_impl_opengl3.cpp.s
@@ -623,7 +653,7 @@ third_party/imgui/imgui_impl_opengl3.s: third_party/imgui/imgui_impl_opengl3.cpp
 
 # target to generate assembly for a file
 third_party/imgui/imgui_impl_opengl3.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_opengl3.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_opengl3.cpp.s
 .PHONY : third_party/imgui/imgui_impl_opengl3.cpp.s
 
 third_party/imgui/imgui_widgets.o: third_party/imgui/imgui_widgets.cpp.o
@@ -632,7 +662,7 @@ third_party/imgui/imgui_widgets.o: third_party/imgui/imgui_widgets.cpp.o
 
 # target to build an object file
 third_party/imgui/imgui_widgets.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_widgets.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_widgets.cpp.o
 .PHONY : third_party/imgui/imgui_widgets.cpp.o
 
 third_party/imgui/imgui_widgets.i: third_party/imgui/imgui_widgets.cpp.i
@@ -641,7 +671,7 @@ third_party/imgui/imgui_widgets.i: third_party/imgui/imgui_widgets.cpp.i
 
 # target to preprocess a source file
 third_party/imgui/imgui_widgets.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_widgets.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_widgets.cpp.i
 .PHONY : third_party/imgui/imgui_widgets.cpp.i
 
 third_party/imgui/imgui_widgets.s: third_party/imgui/imgui_widgets.cpp.s
@@ -650,7 +680,7 @@ third_party/imgui/imgui_widgets.s: third_party/imgui/imgui_widgets.cpp.s
 
 # target to generate assembly for a file
 third_party/imgui/imgui_widgets.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_widgets.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/imgui/imgui_widgets.cpp.s
 .PHONY : third_party/imgui/imgui_widgets.cpp.s
 
 third_party/lodepng/lodepng.o: third_party/lodepng/lodepng.cpp.o
@@ -659,7 +689,7 @@ third_party/lodepng/lodepng.o: third_party/lodepng/lodepng.cpp.o
 
 # target to build an object file
 third_party/lodepng/lodepng.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/lodepng/lodepng.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/lodepng/lodepng.cpp.o
 .PHONY : third_party/lodepng/lodepng.cpp.o
 
 third_party/lodepng/lodepng.i: third_party/lodepng/lodepng.cpp.i
@@ -668,7 +698,7 @@ third_party/lodepng/lodepng.i: third_party/lodepng/lodepng.cpp.i
 
 # target to preprocess a source file
 third_party/lodepng/lodepng.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/lodepng/lodepng.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/lodepng/lodepng.cpp.i
 .PHONY : third_party/lodepng/lodepng.cpp.i
 
 third_party/lodepng/lodepng.s: third_party/lodepng/lodepng.cpp.s
@@ -677,7 +707,7 @@ third_party/lodepng/lodepng.s: third_party/lodepng/lodepng.cpp.s
 
 # target to generate assembly for a file
 third_party/lodepng/lodepng.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/lodepng/lodepng.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/lodepng/lodepng.cpp.s
 .PHONY : third_party/lodepng/lodepng.cpp.s
 
 third_party/simplexnoise/simplexnoise1234.o: third_party/simplexnoise/simplexnoise1234.cpp.o
@@ -686,7 +716,7 @@ third_party/simplexnoise/simplexnoise1234.o: third_party/simplexnoise/simplexnoi
 
 # target to build an object file
 third_party/simplexnoise/simplexnoise1234.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/simplexnoise/simplexnoise1234.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/simplexnoise/simplexnoise1234.cpp.o
 .PHONY : third_party/simplexnoise/simplexnoise1234.cpp.o
 
 third_party/simplexnoise/simplexnoise1234.i: third_party/simplexnoise/simplexnoise1234.cpp.i
@@ -695,7 +725,7 @@ third_party/simplexnoise/simplexnoise1234.i: third_party/simplexnoise/simplexnoi
 
 # target to preprocess a source file
 third_party/simplexnoise/simplexnoise1234.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/simplexnoise/simplexnoise1234.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/simplexnoise/simplexnoise1234.cpp.i
 .PHONY : third_party/simplexnoise/simplexnoise1234.cpp.i
 
 third_party/simplexnoise/simplexnoise1234.s: third_party/simplexnoise/simplexnoise1234.cpp.s
@@ -704,7 +734,7 @@ third_party/simplexnoise/simplexnoise1234.s: third_party/simplexnoise/simplexnoi
 
 # target to generate assembly for a file
 third_party/simplexnoise/simplexnoise1234.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/simplexnoise/simplexnoise1234.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/third_party/simplexnoise/simplexnoise1234.cpp.s
 .PHONY : third_party/simplexnoise/simplexnoise1234.cpp.s
 
 vcl/base/basic_types/basic_types.o: vcl/base/basic_types/basic_types.cpp.o
@@ -713,7 +743,7 @@ vcl/base/basic_types/basic_types.o: vcl/base/basic_types/basic_types.cpp.o
 
 # target to build an object file
 vcl/base/basic_types/basic_types.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/basic_types/basic_types.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/basic_types/basic_types.cpp.o
 .PHONY : vcl/base/basic_types/basic_types.cpp.o
 
 vcl/base/basic_types/basic_types.i: vcl/base/basic_types/basic_types.cpp.i
@@ -722,7 +752,7 @@ vcl/base/basic_types/basic_types.i: vcl/base/basic_types/basic_types.cpp.i
 
 # target to preprocess a source file
 vcl/base/basic_types/basic_types.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/basic_types/basic_types.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/basic_types/basic_types.cpp.i
 .PHONY : vcl/base/basic_types/basic_types.cpp.i
 
 vcl/base/basic_types/basic_types.s: vcl/base/basic_types/basic_types.cpp.s
@@ -731,7 +761,7 @@ vcl/base/basic_types/basic_types.s: vcl/base/basic_types/basic_types.cpp.s
 
 # target to generate assembly for a file
 vcl/base/basic_types/basic_types.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/basic_types/basic_types.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/basic_types/basic_types.cpp.s
 .PHONY : vcl/base/basic_types/basic_types.cpp.s
 
 vcl/base/error/error.o: vcl/base/error/error.cpp.o
@@ -740,7 +770,7 @@ vcl/base/error/error.o: vcl/base/error/error.cpp.o
 
 # target to build an object file
 vcl/base/error/error.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/error/error.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/error/error.cpp.o
 .PHONY : vcl/base/error/error.cpp.o
 
 vcl/base/error/error.i: vcl/base/error/error.cpp.i
@@ -749,7 +779,7 @@ vcl/base/error/error.i: vcl/base/error/error.cpp.i
 
 # target to preprocess a source file
 vcl/base/error/error.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/error/error.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/error/error.cpp.i
 .PHONY : vcl/base/error/error.cpp.i
 
 vcl/base/error/error.s: vcl/base/error/error.cpp.s
@@ -758,7 +788,7 @@ vcl/base/error/error.s: vcl/base/error/error.cpp.s
 
 # target to generate assembly for a file
 vcl/base/error/error.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/error/error.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/error/error.cpp.s
 .PHONY : vcl/base/error/error.cpp.s
 
 vcl/base/file/file.o: vcl/base/file/file.cpp.o
@@ -767,7 +797,7 @@ vcl/base/file/file.o: vcl/base/file/file.cpp.o
 
 # target to build an object file
 vcl/base/file/file.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/file/file.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/file/file.cpp.o
 .PHONY : vcl/base/file/file.cpp.o
 
 vcl/base/file/file.i: vcl/base/file/file.cpp.i
@@ -776,7 +806,7 @@ vcl/base/file/file.i: vcl/base/file/file.cpp.i
 
 # target to preprocess a source file
 vcl/base/file/file.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/file/file.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/file/file.cpp.i
 .PHONY : vcl/base/file/file.cpp.i
 
 vcl/base/file/file.s: vcl/base/file/file.cpp.s
@@ -785,7 +815,7 @@ vcl/base/file/file.s: vcl/base/file/file.cpp.s
 
 # target to generate assembly for a file
 vcl/base/file/file.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/file/file.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/file/file.cpp.s
 .PHONY : vcl/base/file/file.cpp.s
 
 vcl/base/rand/rand.o: vcl/base/rand/rand.cpp.o
@@ -794,7 +824,7 @@ vcl/base/rand/rand.o: vcl/base/rand/rand.cpp.o
 
 # target to build an object file
 vcl/base/rand/rand.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/rand/rand.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/rand/rand.cpp.o
 .PHONY : vcl/base/rand/rand.cpp.o
 
 vcl/base/rand/rand.i: vcl/base/rand/rand.cpp.i
@@ -803,7 +833,7 @@ vcl/base/rand/rand.i: vcl/base/rand/rand.cpp.i
 
 # target to preprocess a source file
 vcl/base/rand/rand.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/rand/rand.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/rand/rand.cpp.i
 .PHONY : vcl/base/rand/rand.cpp.i
 
 vcl/base/rand/rand.s: vcl/base/rand/rand.cpp.s
@@ -812,7 +842,7 @@ vcl/base/rand/rand.s: vcl/base/rand/rand.cpp.s
 
 # target to generate assembly for a file
 vcl/base/rand/rand.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/rand/rand.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/rand/rand.cpp.s
 .PHONY : vcl/base/rand/rand.cpp.s
 
 vcl/base/string/string.o: vcl/base/string/string.cpp.o
@@ -821,7 +851,7 @@ vcl/base/string/string.o: vcl/base/string/string.cpp.o
 
 # target to build an object file
 vcl/base/string/string.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/string/string.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/string/string.cpp.o
 .PHONY : vcl/base/string/string.cpp.o
 
 vcl/base/string/string.i: vcl/base/string/string.cpp.i
@@ -830,7 +860,7 @@ vcl/base/string/string.i: vcl/base/string/string.cpp.i
 
 # target to preprocess a source file
 vcl/base/string/string.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/string/string.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/string/string.cpp.i
 .PHONY : vcl/base/string/string.cpp.i
 
 vcl/base/string/string.s: vcl/base/string/string.cpp.s
@@ -839,7 +869,7 @@ vcl/base/string/string.s: vcl/base/string/string.cpp.s
 
 # target to generate assembly for a file
 vcl/base/string/string.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/string/string.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/base/string/string.cpp.s
 .PHONY : vcl/base/string/string.cpp.s
 
 vcl/interaction/camera/camera.o: vcl/interaction/camera/camera.cpp.o
@@ -848,7 +878,7 @@ vcl/interaction/camera/camera.o: vcl/interaction/camera/camera.cpp.o
 
 # target to build an object file
 vcl/interaction/camera/camera.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/camera/camera.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/camera/camera.cpp.o
 .PHONY : vcl/interaction/camera/camera.cpp.o
 
 vcl/interaction/camera/camera.i: vcl/interaction/camera/camera.cpp.i
@@ -857,7 +887,7 @@ vcl/interaction/camera/camera.i: vcl/interaction/camera/camera.cpp.i
 
 # target to preprocess a source file
 vcl/interaction/camera/camera.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/camera/camera.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/camera/camera.cpp.i
 .PHONY : vcl/interaction/camera/camera.cpp.i
 
 vcl/interaction/camera/camera.s: vcl/interaction/camera/camera.cpp.s
@@ -866,7 +896,7 @@ vcl/interaction/camera/camera.s: vcl/interaction/camera/camera.cpp.s
 
 # target to generate assembly for a file
 vcl/interaction/camera/camera.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/camera/camera.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/camera/camera.cpp.s
 .PHONY : vcl/interaction/camera/camera.cpp.s
 
 vcl/interaction/camera_control_glfw/camera_control_glfw.o: vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.o
@@ -875,7 +905,7 @@ vcl/interaction/camera_control_glfw/camera_control_glfw.o: vcl/interaction/camer
 
 # target to build an object file
 vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.o
 .PHONY : vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.o
 
 vcl/interaction/camera_control_glfw/camera_control_glfw.i: vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.i
@@ -884,7 +914,7 @@ vcl/interaction/camera_control_glfw/camera_control_glfw.i: vcl/interaction/camer
 
 # target to preprocess a source file
 vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.i
 .PHONY : vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.i
 
 vcl/interaction/camera_control_glfw/camera_control_glfw.s: vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.s
@@ -893,7 +923,7 @@ vcl/interaction/camera_control_glfw/camera_control_glfw.s: vcl/interaction/camer
 
 # target to generate assembly for a file
 vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.s
 .PHONY : vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.s
 
 vcl/interaction/picking/info/picking_info.o: vcl/interaction/picking/info/picking_info.cpp.o
@@ -902,7 +932,7 @@ vcl/interaction/picking/info/picking_info.o: vcl/interaction/picking/info/pickin
 
 # target to build an object file
 vcl/interaction/picking/info/picking_info.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/picking/info/picking_info.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/picking/info/picking_info.cpp.o
 .PHONY : vcl/interaction/picking/info/picking_info.cpp.o
 
 vcl/interaction/picking/info/picking_info.i: vcl/interaction/picking/info/picking_info.cpp.i
@@ -911,7 +941,7 @@ vcl/interaction/picking/info/picking_info.i: vcl/interaction/picking/info/pickin
 
 # target to preprocess a source file
 vcl/interaction/picking/info/picking_info.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/picking/info/picking_info.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/picking/info/picking_info.cpp.i
 .PHONY : vcl/interaction/picking/info/picking_info.cpp.i
 
 vcl/interaction/picking/info/picking_info.s: vcl/interaction/picking/info/picking_info.cpp.s
@@ -920,7 +950,7 @@ vcl/interaction/picking/info/picking_info.s: vcl/interaction/picking/info/pickin
 
 # target to generate assembly for a file
 vcl/interaction/picking/info/picking_info.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/picking/info/picking_info.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/picking/info/picking_info.cpp.s
 .PHONY : vcl/interaction/picking/info/picking_info.cpp.s
 
 vcl/interaction/picking/primitives/picking_primitives.o: vcl/interaction/picking/primitives/picking_primitives.cpp.o
@@ -929,7 +959,7 @@ vcl/interaction/picking/primitives/picking_primitives.o: vcl/interaction/picking
 
 # target to build an object file
 vcl/interaction/picking/primitives/picking_primitives.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/picking/primitives/picking_primitives.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/picking/primitives/picking_primitives.cpp.o
 .PHONY : vcl/interaction/picking/primitives/picking_primitives.cpp.o
 
 vcl/interaction/picking/primitives/picking_primitives.i: vcl/interaction/picking/primitives/picking_primitives.cpp.i
@@ -938,7 +968,7 @@ vcl/interaction/picking/primitives/picking_primitives.i: vcl/interaction/picking
 
 # target to preprocess a source file
 vcl/interaction/picking/primitives/picking_primitives.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/picking/primitives/picking_primitives.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/picking/primitives/picking_primitives.cpp.i
 .PHONY : vcl/interaction/picking/primitives/picking_primitives.cpp.i
 
 vcl/interaction/picking/primitives/picking_primitives.s: vcl/interaction/picking/primitives/picking_primitives.cpp.s
@@ -947,7 +977,7 @@ vcl/interaction/picking/primitives/picking_primitives.s: vcl/interaction/picking
 
 # target to generate assembly for a file
 vcl/interaction/picking/primitives/picking_primitives.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/picking/primitives/picking_primitives.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/picking/primitives/picking_primitives.cpp.s
 .PHONY : vcl/interaction/picking/primitives/picking_primitives.cpp.s
 
 vcl/interaction/picking/ray/picking_ray.o: vcl/interaction/picking/ray/picking_ray.cpp.o
@@ -956,7 +986,7 @@ vcl/interaction/picking/ray/picking_ray.o: vcl/interaction/picking/ray/picking_r
 
 # target to build an object file
 vcl/interaction/picking/ray/picking_ray.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/picking/ray/picking_ray.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/picking/ray/picking_ray.cpp.o
 .PHONY : vcl/interaction/picking/ray/picking_ray.cpp.o
 
 vcl/interaction/picking/ray/picking_ray.i: vcl/interaction/picking/ray/picking_ray.cpp.i
@@ -965,7 +995,7 @@ vcl/interaction/picking/ray/picking_ray.i: vcl/interaction/picking/ray/picking_r
 
 # target to preprocess a source file
 vcl/interaction/picking/ray/picking_ray.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/picking/ray/picking_ray.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/picking/ray/picking_ray.cpp.i
 .PHONY : vcl/interaction/picking/ray/picking_ray.cpp.i
 
 vcl/interaction/picking/ray/picking_ray.s: vcl/interaction/picking/ray/picking_ray.cpp.s
@@ -974,7 +1004,7 @@ vcl/interaction/picking/ray/picking_ray.s: vcl/interaction/picking/ray/picking_r
 
 # target to generate assembly for a file
 vcl/interaction/picking/ray/picking_ray.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/picking/ray/picking_ray.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/picking/ray/picking_ray.cpp.s
 .PHONY : vcl/interaction/picking/ray/picking_ray.cpp.s
 
 vcl/interaction/screen_motion/screen_motion.o: vcl/interaction/screen_motion/screen_motion.cpp.o
@@ -983,7 +1013,7 @@ vcl/interaction/screen_motion/screen_motion.o: vcl/interaction/screen_motion/scr
 
 # target to build an object file
 vcl/interaction/screen_motion/screen_motion.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/screen_motion/screen_motion.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/screen_motion/screen_motion.cpp.o
 .PHONY : vcl/interaction/screen_motion/screen_motion.cpp.o
 
 vcl/interaction/screen_motion/screen_motion.i: vcl/interaction/screen_motion/screen_motion.cpp.i
@@ -992,7 +1022,7 @@ vcl/interaction/screen_motion/screen_motion.i: vcl/interaction/screen_motion/scr
 
 # target to preprocess a source file
 vcl/interaction/screen_motion/screen_motion.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/screen_motion/screen_motion.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/screen_motion/screen_motion.cpp.i
 .PHONY : vcl/interaction/screen_motion/screen_motion.cpp.i
 
 vcl/interaction/screen_motion/screen_motion.s: vcl/interaction/screen_motion/screen_motion.cpp.s
@@ -1001,7 +1031,7 @@ vcl/interaction/screen_motion/screen_motion.s: vcl/interaction/screen_motion/scr
 
 # target to generate assembly for a file
 vcl/interaction/screen_motion/screen_motion.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/screen_motion/screen_motion.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/screen_motion/screen_motion.cpp.s
 .PHONY : vcl/interaction/screen_motion/screen_motion.cpp.s
 
 vcl/interaction/time_period/time_period.o: vcl/interaction/time_period/time_period.cpp.o
@@ -1010,7 +1040,7 @@ vcl/interaction/time_period/time_period.o: vcl/interaction/time_period/time_peri
 
 # target to build an object file
 vcl/interaction/time_period/time_period.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/time_period/time_period.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/time_period/time_period.cpp.o
 .PHONY : vcl/interaction/time_period/time_period.cpp.o
 
 vcl/interaction/time_period/time_period.i: vcl/interaction/time_period/time_period.cpp.i
@@ -1019,7 +1049,7 @@ vcl/interaction/time_period/time_period.i: vcl/interaction/time_period/time_peri
 
 # target to preprocess a source file
 vcl/interaction/time_period/time_period.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/time_period/time_period.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/time_period/time_period.cpp.i
 .PHONY : vcl/interaction/time_period/time_period.cpp.i
 
 vcl/interaction/time_period/time_period.s: vcl/interaction/time_period/time_period.cpp.s
@@ -1028,7 +1058,7 @@ vcl/interaction/time_period/time_period.s: vcl/interaction/time_period/time_peri
 
 # target to generate assembly for a file
 vcl/interaction/time_period/time_period.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/time_period/time_period.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/time_period/time_period.cpp.s
 .PHONY : vcl/interaction/time_period/time_period.cpp.s
 
 vcl/interaction/time_slider/time_slider.o: vcl/interaction/time_slider/time_slider.cpp.o
@@ -1037,7 +1067,7 @@ vcl/interaction/time_slider/time_slider.o: vcl/interaction/time_slider/time_slid
 
 # target to build an object file
 vcl/interaction/time_slider/time_slider.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/time_slider/time_slider.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/time_slider/time_slider.cpp.o
 .PHONY : vcl/interaction/time_slider/time_slider.cpp.o
 
 vcl/interaction/time_slider/time_slider.i: vcl/interaction/time_slider/time_slider.cpp.i
@@ -1046,7 +1076,7 @@ vcl/interaction/time_slider/time_slider.i: vcl/interaction/time_slider/time_slid
 
 # target to preprocess a source file
 vcl/interaction/time_slider/time_slider.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/time_slider/time_slider.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/time_slider/time_slider.cpp.i
 .PHONY : vcl/interaction/time_slider/time_slider.cpp.i
 
 vcl/interaction/time_slider/time_slider.s: vcl/interaction/time_slider/time_slider.cpp.s
@@ -1055,7 +1085,7 @@ vcl/interaction/time_slider/time_slider.s: vcl/interaction/time_slider/time_slid
 
 # target to generate assembly for a file
 vcl/interaction/time_slider/time_slider.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/time_slider/time_slider.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/interaction/time_slider/time_slider.cpp.s
 .PHONY : vcl/interaction/time_slider/time_slider.cpp.s
 
 vcl/math/helper_functions/linspace/linspace.o: vcl/math/helper_functions/linspace/linspace.cpp.o
@@ -1064,7 +1094,7 @@ vcl/math/helper_functions/linspace/linspace.o: vcl/math/helper_functions/linspac
 
 # target to build an object file
 vcl/math/helper_functions/linspace/linspace.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/helper_functions/linspace/linspace.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/helper_functions/linspace/linspace.cpp.o
 .PHONY : vcl/math/helper_functions/linspace/linspace.cpp.o
 
 vcl/math/helper_functions/linspace/linspace.i: vcl/math/helper_functions/linspace/linspace.cpp.i
@@ -1073,7 +1103,7 @@ vcl/math/helper_functions/linspace/linspace.i: vcl/math/helper_functions/linspac
 
 # target to preprocess a source file
 vcl/math/helper_functions/linspace/linspace.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/helper_functions/linspace/linspace.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/helper_functions/linspace/linspace.cpp.i
 .PHONY : vcl/math/helper_functions/linspace/linspace.cpp.i
 
 vcl/math/helper_functions/linspace/linspace.s: vcl/math/helper_functions/linspace/linspace.cpp.s
@@ -1082,7 +1112,7 @@ vcl/math/helper_functions/linspace/linspace.s: vcl/math/helper_functions/linspac
 
 # target to generate assembly for a file
 vcl/math/helper_functions/linspace/linspace.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/helper_functions/linspace/linspace.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/helper_functions/linspace/linspace.cpp.s
 .PHONY : vcl/math/helper_functions/linspace/linspace.cpp.s
 
 vcl/math/helper_functions/norm/norm.o: vcl/math/helper_functions/norm/norm.cpp.o
@@ -1091,7 +1121,7 @@ vcl/math/helper_functions/norm/norm.o: vcl/math/helper_functions/norm/norm.cpp.o
 
 # target to build an object file
 vcl/math/helper_functions/norm/norm.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/helper_functions/norm/norm.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/helper_functions/norm/norm.cpp.o
 .PHONY : vcl/math/helper_functions/norm/norm.cpp.o
 
 vcl/math/helper_functions/norm/norm.i: vcl/math/helper_functions/norm/norm.cpp.i
@@ -1100,7 +1130,7 @@ vcl/math/helper_functions/norm/norm.i: vcl/math/helper_functions/norm/norm.cpp.i
 
 # target to preprocess a source file
 vcl/math/helper_functions/norm/norm.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/helper_functions/norm/norm.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/helper_functions/norm/norm.cpp.i
 .PHONY : vcl/math/helper_functions/norm/norm.cpp.i
 
 vcl/math/helper_functions/norm/norm.s: vcl/math/helper_functions/norm/norm.cpp.s
@@ -1109,7 +1139,7 @@ vcl/math/helper_functions/norm/norm.s: vcl/math/helper_functions/norm/norm.cpp.s
 
 # target to generate assembly for a file
 vcl/math/helper_functions/norm/norm.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/helper_functions/norm/norm.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/helper_functions/norm/norm.cpp.s
 .PHONY : vcl/math/helper_functions/norm/norm.cpp.s
 
 vcl/math/mat/mat2/mat2.o: vcl/math/mat/mat2/mat2.cpp.o
@@ -1118,7 +1148,7 @@ vcl/math/mat/mat2/mat2.o: vcl/math/mat/mat2/mat2.cpp.o
 
 # target to build an object file
 vcl/math/mat/mat2/mat2.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/mat/mat2/mat2.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/mat/mat2/mat2.cpp.o
 .PHONY : vcl/math/mat/mat2/mat2.cpp.o
 
 vcl/math/mat/mat2/mat2.i: vcl/math/mat/mat2/mat2.cpp.i
@@ -1127,7 +1157,7 @@ vcl/math/mat/mat2/mat2.i: vcl/math/mat/mat2/mat2.cpp.i
 
 # target to preprocess a source file
 vcl/math/mat/mat2/mat2.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/mat/mat2/mat2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/mat/mat2/mat2.cpp.i
 .PHONY : vcl/math/mat/mat2/mat2.cpp.i
 
 vcl/math/mat/mat2/mat2.s: vcl/math/mat/mat2/mat2.cpp.s
@@ -1136,7 +1166,7 @@ vcl/math/mat/mat2/mat2.s: vcl/math/mat/mat2/mat2.cpp.s
 
 # target to generate assembly for a file
 vcl/math/mat/mat2/mat2.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/mat/mat2/mat2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/mat/mat2/mat2.cpp.s
 .PHONY : vcl/math/mat/mat2/mat2.cpp.s
 
 vcl/math/mat/mat3/mat3.o: vcl/math/mat/mat3/mat3.cpp.o
@@ -1145,7 +1175,7 @@ vcl/math/mat/mat3/mat3.o: vcl/math/mat/mat3/mat3.cpp.o
 
 # target to build an object file
 vcl/math/mat/mat3/mat3.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/mat/mat3/mat3.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/mat/mat3/mat3.cpp.o
 .PHONY : vcl/math/mat/mat3/mat3.cpp.o
 
 vcl/math/mat/mat3/mat3.i: vcl/math/mat/mat3/mat3.cpp.i
@@ -1154,7 +1184,7 @@ vcl/math/mat/mat3/mat3.i: vcl/math/mat/mat3/mat3.cpp.i
 
 # target to preprocess a source file
 vcl/math/mat/mat3/mat3.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/mat/mat3/mat3.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/mat/mat3/mat3.cpp.i
 .PHONY : vcl/math/mat/mat3/mat3.cpp.i
 
 vcl/math/mat/mat3/mat3.s: vcl/math/mat/mat3/mat3.cpp.s
@@ -1163,7 +1193,7 @@ vcl/math/mat/mat3/mat3.s: vcl/math/mat/mat3/mat3.cpp.s
 
 # target to generate assembly for a file
 vcl/math/mat/mat3/mat3.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/mat/mat3/mat3.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/mat/mat3/mat3.cpp.s
 .PHONY : vcl/math/mat/mat3/mat3.cpp.s
 
 vcl/math/mat/mat4/mat4.o: vcl/math/mat/mat4/mat4.cpp.o
@@ -1172,7 +1202,7 @@ vcl/math/mat/mat4/mat4.o: vcl/math/mat/mat4/mat4.cpp.o
 
 # target to build an object file
 vcl/math/mat/mat4/mat4.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/mat/mat4/mat4.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/mat/mat4/mat4.cpp.o
 .PHONY : vcl/math/mat/mat4/mat4.cpp.o
 
 vcl/math/mat/mat4/mat4.i: vcl/math/mat/mat4/mat4.cpp.i
@@ -1181,7 +1211,7 @@ vcl/math/mat/mat4/mat4.i: vcl/math/mat/mat4/mat4.cpp.i
 
 # target to preprocess a source file
 vcl/math/mat/mat4/mat4.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/mat/mat4/mat4.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/mat/mat4/mat4.cpp.i
 .PHONY : vcl/math/mat/mat4/mat4.cpp.i
 
 vcl/math/mat/mat4/mat4.s: vcl/math/mat/mat4/mat4.cpp.s
@@ -1190,7 +1220,7 @@ vcl/math/mat/mat4/mat4.s: vcl/math/mat/mat4/mat4.cpp.s
 
 # target to generate assembly for a file
 vcl/math/mat/mat4/mat4.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/mat/mat4/mat4.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/mat/mat4/mat4.cpp.s
 .PHONY : vcl/math/mat/mat4/mat4.cpp.s
 
 vcl/math/transformation/affine_transform/affine_transform.o: vcl/math/transformation/affine_transform/affine_transform.cpp.o
@@ -1199,7 +1229,7 @@ vcl/math/transformation/affine_transform/affine_transform.o: vcl/math/transforma
 
 # target to build an object file
 vcl/math/transformation/affine_transform/affine_transform.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/transformation/affine_transform/affine_transform.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/transformation/affine_transform/affine_transform.cpp.o
 .PHONY : vcl/math/transformation/affine_transform/affine_transform.cpp.o
 
 vcl/math/transformation/affine_transform/affine_transform.i: vcl/math/transformation/affine_transform/affine_transform.cpp.i
@@ -1208,7 +1238,7 @@ vcl/math/transformation/affine_transform/affine_transform.i: vcl/math/transforma
 
 # target to preprocess a source file
 vcl/math/transformation/affine_transform/affine_transform.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/transformation/affine_transform/affine_transform.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/transformation/affine_transform/affine_transform.cpp.i
 .PHONY : vcl/math/transformation/affine_transform/affine_transform.cpp.i
 
 vcl/math/transformation/affine_transform/affine_transform.s: vcl/math/transformation/affine_transform/affine_transform.cpp.s
@@ -1217,7 +1247,7 @@ vcl/math/transformation/affine_transform/affine_transform.s: vcl/math/transforma
 
 # target to generate assembly for a file
 vcl/math/transformation/affine_transform/affine_transform.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/transformation/affine_transform/affine_transform.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/transformation/affine_transform/affine_transform.cpp.s
 .PHONY : vcl/math/transformation/affine_transform/affine_transform.cpp.s
 
 vcl/math/transformation/special_transform/special_transform.o: vcl/math/transformation/special_transform/special_transform.cpp.o
@@ -1226,7 +1256,7 @@ vcl/math/transformation/special_transform/special_transform.o: vcl/math/transfor
 
 # target to build an object file
 vcl/math/transformation/special_transform/special_transform.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/transformation/special_transform/special_transform.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/transformation/special_transform/special_transform.cpp.o
 .PHONY : vcl/math/transformation/special_transform/special_transform.cpp.o
 
 vcl/math/transformation/special_transform/special_transform.i: vcl/math/transformation/special_transform/special_transform.cpp.i
@@ -1235,7 +1265,7 @@ vcl/math/transformation/special_transform/special_transform.i: vcl/math/transfor
 
 # target to preprocess a source file
 vcl/math/transformation/special_transform/special_transform.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/transformation/special_transform/special_transform.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/transformation/special_transform/special_transform.cpp.i
 .PHONY : vcl/math/transformation/special_transform/special_transform.cpp.i
 
 vcl/math/transformation/special_transform/special_transform.s: vcl/math/transformation/special_transform/special_transform.cpp.s
@@ -1244,7 +1274,7 @@ vcl/math/transformation/special_transform/special_transform.s: vcl/math/transfor
 
 # target to generate assembly for a file
 vcl/math/transformation/special_transform/special_transform.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/transformation/special_transform/special_transform.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/transformation/special_transform/special_transform.cpp.s
 .PHONY : vcl/math/transformation/special_transform/special_transform.cpp.s
 
 vcl/math/vec/vec2/vec2.o: vcl/math/vec/vec2/vec2.cpp.o
@@ -1253,7 +1283,7 @@ vcl/math/vec/vec2/vec2.o: vcl/math/vec/vec2/vec2.cpp.o
 
 # target to build an object file
 vcl/math/vec/vec2/vec2.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/vec/vec2/vec2.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/vec/vec2/vec2.cpp.o
 .PHONY : vcl/math/vec/vec2/vec2.cpp.o
 
 vcl/math/vec/vec2/vec2.i: vcl/math/vec/vec2/vec2.cpp.i
@@ -1262,7 +1292,7 @@ vcl/math/vec/vec2/vec2.i: vcl/math/vec/vec2/vec2.cpp.i
 
 # target to preprocess a source file
 vcl/math/vec/vec2/vec2.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/vec/vec2/vec2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/vec/vec2/vec2.cpp.i
 .PHONY : vcl/math/vec/vec2/vec2.cpp.i
 
 vcl/math/vec/vec2/vec2.s: vcl/math/vec/vec2/vec2.cpp.s
@@ -1271,7 +1301,7 @@ vcl/math/vec/vec2/vec2.s: vcl/math/vec/vec2/vec2.cpp.s
 
 # target to generate assembly for a file
 vcl/math/vec/vec2/vec2.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/vec/vec2/vec2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/vec/vec2/vec2.cpp.s
 .PHONY : vcl/math/vec/vec2/vec2.cpp.s
 
 vcl/math/vec/vec3/vec3.o: vcl/math/vec/vec3/vec3.cpp.o
@@ -1280,7 +1310,7 @@ vcl/math/vec/vec3/vec3.o: vcl/math/vec/vec3/vec3.cpp.o
 
 # target to build an object file
 vcl/math/vec/vec3/vec3.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/vec/vec3/vec3.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/vec/vec3/vec3.cpp.o
 .PHONY : vcl/math/vec/vec3/vec3.cpp.o
 
 vcl/math/vec/vec3/vec3.i: vcl/math/vec/vec3/vec3.cpp.i
@@ -1289,7 +1319,7 @@ vcl/math/vec/vec3/vec3.i: vcl/math/vec/vec3/vec3.cpp.i
 
 # target to preprocess a source file
 vcl/math/vec/vec3/vec3.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/vec/vec3/vec3.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/vec/vec3/vec3.cpp.i
 .PHONY : vcl/math/vec/vec3/vec3.cpp.i
 
 vcl/math/vec/vec3/vec3.s: vcl/math/vec/vec3/vec3.cpp.s
@@ -1298,7 +1328,7 @@ vcl/math/vec/vec3/vec3.s: vcl/math/vec/vec3/vec3.cpp.s
 
 # target to generate assembly for a file
 vcl/math/vec/vec3/vec3.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/vec/vec3/vec3.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/vec/vec3/vec3.cpp.s
 .PHONY : vcl/math/vec/vec3/vec3.cpp.s
 
 vcl/math/vec/vec4/vec4.o: vcl/math/vec/vec4/vec4.cpp.o
@@ -1307,7 +1337,7 @@ vcl/math/vec/vec4/vec4.o: vcl/math/vec/vec4/vec4.cpp.o
 
 # target to build an object file
 vcl/math/vec/vec4/vec4.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/vec/vec4/vec4.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/vec/vec4/vec4.cpp.o
 .PHONY : vcl/math/vec/vec4/vec4.cpp.o
 
 vcl/math/vec/vec4/vec4.i: vcl/math/vec/vec4/vec4.cpp.i
@@ -1316,7 +1346,7 @@ vcl/math/vec/vec4/vec4.i: vcl/math/vec/vec4/vec4.cpp.i
 
 # target to preprocess a source file
 vcl/math/vec/vec4/vec4.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/vec/vec4/vec4.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/vec/vec4/vec4.cpp.i
 .PHONY : vcl/math/vec/vec4/vec4.cpp.i
 
 vcl/math/vec/vec4/vec4.s: vcl/math/vec/vec4/vec4.cpp.s
@@ -1325,7 +1355,7 @@ vcl/math/vec/vec4/vec4.s: vcl/math/vec/vec4/vec4.cpp.s
 
 # target to generate assembly for a file
 vcl/math/vec/vec4/vec4.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/vec/vec4/vec4.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/math/vec/vec4/vec4.cpp.s
 .PHONY : vcl/math/vec/vec4/vec4.cpp.s
 
 vcl/opengl/debug/opengl_debug.o: vcl/opengl/debug/opengl_debug.cpp.o
@@ -1334,7 +1364,7 @@ vcl/opengl/debug/opengl_debug.o: vcl/opengl/debug/opengl_debug.cpp.o
 
 # target to build an object file
 vcl/opengl/debug/opengl_debug.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/debug/opengl_debug.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/debug/opengl_debug.cpp.o
 .PHONY : vcl/opengl/debug/opengl_debug.cpp.o
 
 vcl/opengl/debug/opengl_debug.i: vcl/opengl/debug/opengl_debug.cpp.i
@@ -1343,7 +1373,7 @@ vcl/opengl/debug/opengl_debug.i: vcl/opengl/debug/opengl_debug.cpp.i
 
 # target to preprocess a source file
 vcl/opengl/debug/opengl_debug.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/debug/opengl_debug.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/debug/opengl_debug.cpp.i
 .PHONY : vcl/opengl/debug/opengl_debug.cpp.i
 
 vcl/opengl/debug/opengl_debug.s: vcl/opengl/debug/opengl_debug.cpp.s
@@ -1352,7 +1382,7 @@ vcl/opengl/debug/opengl_debug.s: vcl/opengl/debug/opengl_debug.cpp.s
 
 # target to generate assembly for a file
 vcl/opengl/debug/opengl_debug.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/debug/opengl_debug.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/debug/opengl_debug.cpp.s
 .PHONY : vcl/opengl/debug/opengl_debug.cpp.s
 
 vcl/opengl/shader/shader.o: vcl/opengl/shader/shader.cpp.o
@@ -1361,7 +1391,7 @@ vcl/opengl/shader/shader.o: vcl/opengl/shader/shader.cpp.o
 
 # target to build an object file
 vcl/opengl/shader/shader.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/shader/shader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/shader/shader.cpp.o
 .PHONY : vcl/opengl/shader/shader.cpp.o
 
 vcl/opengl/shader/shader.i: vcl/opengl/shader/shader.cpp.i
@@ -1370,7 +1400,7 @@ vcl/opengl/shader/shader.i: vcl/opengl/shader/shader.cpp.i
 
 # target to preprocess a source file
 vcl/opengl/shader/shader.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/shader/shader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/shader/shader.cpp.i
 .PHONY : vcl/opengl/shader/shader.cpp.i
 
 vcl/opengl/shader/shader.s: vcl/opengl/shader/shader.cpp.s
@@ -1379,7 +1409,7 @@ vcl/opengl/shader/shader.s: vcl/opengl/shader/shader.cpp.s
 
 # target to generate assembly for a file
 vcl/opengl/shader/shader.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/shader/shader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/shader/shader.cpp.s
 .PHONY : vcl/opengl/shader/shader.cpp.s
 
 vcl/opengl/texture/image/image.o: vcl/opengl/texture/image/image.cpp.o
@@ -1388,7 +1418,7 @@ vcl/opengl/texture/image/image.o: vcl/opengl/texture/image/image.cpp.o
 
 # target to build an object file
 vcl/opengl/texture/image/image.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/texture/image/image.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/texture/image/image.cpp.o
 .PHONY : vcl/opengl/texture/image/image.cpp.o
 
 vcl/opengl/texture/image/image.i: vcl/opengl/texture/image/image.cpp.i
@@ -1397,7 +1427,7 @@ vcl/opengl/texture/image/image.i: vcl/opengl/texture/image/image.cpp.i
 
 # target to preprocess a source file
 vcl/opengl/texture/image/image.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/texture/image/image.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/texture/image/image.cpp.i
 .PHONY : vcl/opengl/texture/image/image.cpp.i
 
 vcl/opengl/texture/image/image.s: vcl/opengl/texture/image/image.cpp.s
@@ -1406,7 +1436,7 @@ vcl/opengl/texture/image/image.s: vcl/opengl/texture/image/image.cpp.s
 
 # target to generate assembly for a file
 vcl/opengl/texture/image/image.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/texture/image/image.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/texture/image/image.cpp.s
 .PHONY : vcl/opengl/texture/image/image.cpp.s
 
 vcl/opengl/texture/texture_gpu/texture_gpu.o: vcl/opengl/texture/texture_gpu/texture_gpu.cpp.o
@@ -1415,7 +1445,7 @@ vcl/opengl/texture/texture_gpu/texture_gpu.o: vcl/opengl/texture/texture_gpu/tex
 
 # target to build an object file
 vcl/opengl/texture/texture_gpu/texture_gpu.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/texture/texture_gpu/texture_gpu.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/texture/texture_gpu/texture_gpu.cpp.o
 .PHONY : vcl/opengl/texture/texture_gpu/texture_gpu.cpp.o
 
 vcl/opengl/texture/texture_gpu/texture_gpu.i: vcl/opengl/texture/texture_gpu/texture_gpu.cpp.i
@@ -1424,7 +1454,7 @@ vcl/opengl/texture/texture_gpu/texture_gpu.i: vcl/opengl/texture/texture_gpu/tex
 
 # target to preprocess a source file
 vcl/opengl/texture/texture_gpu/texture_gpu.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/texture/texture_gpu/texture_gpu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/texture/texture_gpu/texture_gpu.cpp.i
 .PHONY : vcl/opengl/texture/texture_gpu/texture_gpu.cpp.i
 
 vcl/opengl/texture/texture_gpu/texture_gpu.s: vcl/opengl/texture/texture_gpu/texture_gpu.cpp.s
@@ -1433,7 +1463,7 @@ vcl/opengl/texture/texture_gpu/texture_gpu.s: vcl/opengl/texture/texture_gpu/tex
 
 # target to generate assembly for a file
 vcl/opengl/texture/texture_gpu/texture_gpu.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/texture/texture_gpu/texture_gpu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/texture/texture_gpu/texture_gpu.cpp.s
 .PHONY : vcl/opengl/texture/texture_gpu/texture_gpu.cpp.s
 
 vcl/opengl/uniform/uniform.o: vcl/opengl/uniform/uniform.cpp.o
@@ -1442,7 +1472,7 @@ vcl/opengl/uniform/uniform.o: vcl/opengl/uniform/uniform.cpp.o
 
 # target to build an object file
 vcl/opengl/uniform/uniform.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/uniform/uniform.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/uniform/uniform.cpp.o
 .PHONY : vcl/opengl/uniform/uniform.cpp.o
 
 vcl/opengl/uniform/uniform.i: vcl/opengl/uniform/uniform.cpp.i
@@ -1451,7 +1481,7 @@ vcl/opengl/uniform/uniform.i: vcl/opengl/uniform/uniform.cpp.i
 
 # target to preprocess a source file
 vcl/opengl/uniform/uniform.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/uniform/uniform.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/uniform/uniform.cpp.i
 .PHONY : vcl/opengl/uniform/uniform.cpp.i
 
 vcl/opengl/uniform/uniform.s: vcl/opengl/uniform/uniform.cpp.s
@@ -1460,7 +1490,7 @@ vcl/opengl/uniform/uniform.s: vcl/opengl/uniform/uniform.cpp.s
 
 # target to generate assembly for a file
 vcl/opengl/uniform/uniform.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/uniform/uniform.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/opengl/uniform/uniform.cpp.s
 .PHONY : vcl/opengl/uniform/uniform.cpp.s
 
 vcl/shape/curve/curve_drawable/curve_drawable.o: vcl/shape/curve/curve_drawable/curve_drawable.cpp.o
@@ -1469,7 +1499,7 @@ vcl/shape/curve/curve_drawable/curve_drawable.o: vcl/shape/curve/curve_drawable/
 
 # target to build an object file
 vcl/shape/curve/curve_drawable/curve_drawable.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_drawable/curve_drawable.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_drawable/curve_drawable.cpp.o
 .PHONY : vcl/shape/curve/curve_drawable/curve_drawable.cpp.o
 
 vcl/shape/curve/curve_drawable/curve_drawable.i: vcl/shape/curve/curve_drawable/curve_drawable.cpp.i
@@ -1478,7 +1508,7 @@ vcl/shape/curve/curve_drawable/curve_drawable.i: vcl/shape/curve/curve_drawable/
 
 # target to preprocess a source file
 vcl/shape/curve/curve_drawable/curve_drawable.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_drawable/curve_drawable.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_drawable/curve_drawable.cpp.i
 .PHONY : vcl/shape/curve/curve_drawable/curve_drawable.cpp.i
 
 vcl/shape/curve/curve_drawable/curve_drawable.s: vcl/shape/curve/curve_drawable/curve_drawable.cpp.s
@@ -1487,7 +1517,7 @@ vcl/shape/curve/curve_drawable/curve_drawable.s: vcl/shape/curve/curve_drawable/
 
 # target to generate assembly for a file
 vcl/shape/curve/curve_drawable/curve_drawable.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_drawable/curve_drawable.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_drawable/curve_drawable.cpp.s
 .PHONY : vcl/shape/curve/curve_drawable/curve_drawable.cpp.s
 
 vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.o: vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.o
@@ -1496,7 +1526,7 @@ vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.o: vcl/shape/curve
 
 # target to build an object file
 vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.o
 .PHONY : vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.o
 
 vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.i: vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.i
@@ -1505,7 +1535,7 @@ vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.i: vcl/shape/curve
 
 # target to preprocess a source file
 vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.i
 .PHONY : vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.i
 
 vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.s: vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.s
@@ -1514,7 +1544,7 @@ vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.s: vcl/shape/curve
 
 # target to generate assembly for a file
 vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.s
 .PHONY : vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.s
 
 vcl/shape/curve/curve_gpu/curve_gpu.o: vcl/shape/curve/curve_gpu/curve_gpu.cpp.o
@@ -1523,7 +1553,7 @@ vcl/shape/curve/curve_gpu/curve_gpu.o: vcl/shape/curve/curve_gpu/curve_gpu.cpp.o
 
 # target to build an object file
 vcl/shape/curve/curve_gpu/curve_gpu.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_gpu/curve_gpu.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_gpu/curve_gpu.cpp.o
 .PHONY : vcl/shape/curve/curve_gpu/curve_gpu.cpp.o
 
 vcl/shape/curve/curve_gpu/curve_gpu.i: vcl/shape/curve/curve_gpu/curve_gpu.cpp.i
@@ -1532,7 +1562,7 @@ vcl/shape/curve/curve_gpu/curve_gpu.i: vcl/shape/curve/curve_gpu/curve_gpu.cpp.i
 
 # target to preprocess a source file
 vcl/shape/curve/curve_gpu/curve_gpu.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_gpu/curve_gpu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_gpu/curve_gpu.cpp.i
 .PHONY : vcl/shape/curve/curve_gpu/curve_gpu.cpp.i
 
 vcl/shape/curve/curve_gpu/curve_gpu.s: vcl/shape/curve/curve_gpu/curve_gpu.cpp.s
@@ -1541,7 +1571,7 @@ vcl/shape/curve/curve_gpu/curve_gpu.s: vcl/shape/curve/curve_gpu/curve_gpu.cpp.s
 
 # target to generate assembly for a file
 vcl/shape/curve/curve_gpu/curve_gpu.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_gpu/curve_gpu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_gpu/curve_gpu.cpp.s
 .PHONY : vcl/shape/curve/curve_gpu/curve_gpu.cpp.s
 
 vcl/shape/curve/curve_primitive/curve_primitive.o: vcl/shape/curve/curve_primitive/curve_primitive.cpp.o
@@ -1550,7 +1580,7 @@ vcl/shape/curve/curve_primitive/curve_primitive.o: vcl/shape/curve/curve_primiti
 
 # target to build an object file
 vcl/shape/curve/curve_primitive/curve_primitive.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_primitive/curve_primitive.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_primitive/curve_primitive.cpp.o
 .PHONY : vcl/shape/curve/curve_primitive/curve_primitive.cpp.o
 
 vcl/shape/curve/curve_primitive/curve_primitive.i: vcl/shape/curve/curve_primitive/curve_primitive.cpp.i
@@ -1559,7 +1589,7 @@ vcl/shape/curve/curve_primitive/curve_primitive.i: vcl/shape/curve/curve_primiti
 
 # target to preprocess a source file
 vcl/shape/curve/curve_primitive/curve_primitive.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_primitive/curve_primitive.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_primitive/curve_primitive.cpp.i
 .PHONY : vcl/shape/curve/curve_primitive/curve_primitive.cpp.i
 
 vcl/shape/curve/curve_primitive/curve_primitive.s: vcl/shape/curve/curve_primitive/curve_primitive.cpp.s
@@ -1568,7 +1598,7 @@ vcl/shape/curve/curve_primitive/curve_primitive.s: vcl/shape/curve/curve_primiti
 
 # target to generate assembly for a file
 vcl/shape/curve/curve_primitive/curve_primitive.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_primitive/curve_primitive.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/curve/curve_primitive/curve_primitive.cpp.s
 .PHONY : vcl/shape/curve/curve_primitive/curve_primitive.cpp.s
 
 vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.o: vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.o
@@ -1577,7 +1607,7 @@ vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.o: vcl/
 
 # target to build an object file
 vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.o
 .PHONY : vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.o
 
 vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.i: vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.i
@@ -1586,7 +1616,7 @@ vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.i: vcl/
 
 # target to preprocess a source file
 vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.i
 .PHONY : vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.i
 
 vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.s: vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.s
@@ -1595,7 +1625,7 @@ vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.s: vcl/
 
 # target to generate assembly for a file
 vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.s
 .PHONY : vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.s
 
 vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.o: vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.o
@@ -1604,7 +1634,7 @@ vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display
 
 # target to build an object file
 vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.o
 .PHONY : vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.o
 
 vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.i: vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.i
@@ -1613,7 +1643,7 @@ vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display
 
 # target to preprocess a source file
 vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.i
 .PHONY : vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.i
 
 vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.s: vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.s
@@ -1622,7 +1652,7 @@ vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display
 
 # target to generate assembly for a file
 vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.s
 .PHONY : vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.s
 
 vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.o: vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.o
@@ -1631,7 +1661,7 @@ vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hi
 
 # target to build an object file
 vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.o
 .PHONY : vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.o
 
 vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.i: vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.i
@@ -1640,7 +1670,7 @@ vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hi
 
 # target to preprocess a source file
 vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.i
 .PHONY : vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.i
 
 vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.s: vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.s
@@ -1649,7 +1679,7 @@ vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hi
 
 # target to generate assembly for a file
 vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.s
 .PHONY : vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.s
 
 vcl/shape/mesh/mesh_drawable/mesh_drawable.o: vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.o
@@ -1658,7 +1688,7 @@ vcl/shape/mesh/mesh_drawable/mesh_drawable.o: vcl/shape/mesh/mesh_drawable/mesh_
 
 # target to build an object file
 vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.o
 .PHONY : vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.o
 
 vcl/shape/mesh/mesh_drawable/mesh_drawable.i: vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.i
@@ -1667,7 +1697,7 @@ vcl/shape/mesh/mesh_drawable/mesh_drawable.i: vcl/shape/mesh/mesh_drawable/mesh_
 
 # target to preprocess a source file
 vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.i
 .PHONY : vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.i
 
 vcl/shape/mesh/mesh_drawable/mesh_drawable.s: vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.s
@@ -1676,7 +1706,7 @@ vcl/shape/mesh/mesh_drawable/mesh_drawable.s: vcl/shape/mesh/mesh_drawable/mesh_
 
 # target to generate assembly for a file
 vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.s
 .PHONY : vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.s
 
 vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.o: vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.o
@@ -1685,7 +1715,7 @@ vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.o: vc
 
 # target to build an object file
 vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.o
 .PHONY : vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.o
 
 vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.i: vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.i
@@ -1694,7 +1724,7 @@ vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.i: vc
 
 # target to preprocess a source file
 vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.i
 .PHONY : vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.i
 
 vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.s: vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.s
@@ -1703,7 +1733,7 @@ vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.s: vc
 
 # target to generate assembly for a file
 vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.s
 .PHONY : vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.s
 
 vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.o: vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.o
@@ -1712,7 +1742,7 @@ vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.o: vcl/
 
 # target to build an object file
 vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.o
 .PHONY : vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.o
 
 vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.i: vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.i
@@ -1721,7 +1751,7 @@ vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.i: vcl/
 
 # target to preprocess a source file
 vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.i
 .PHONY : vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.i
 
 vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.s: vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.s
@@ -1730,7 +1760,7 @@ vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.s: vcl/
 
 # target to generate assembly for a file
 vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.s
 .PHONY : vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.s
 
 vcl/shape/mesh/mesh_loader/obj/obj.o: vcl/shape/mesh/mesh_loader/obj/obj.cpp.o
@@ -1739,7 +1769,7 @@ vcl/shape/mesh/mesh_loader/obj/obj.o: vcl/shape/mesh/mesh_loader/obj/obj.cpp.o
 
 # target to build an object file
 vcl/shape/mesh/mesh_loader/obj/obj.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_loader/obj/obj.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_loader/obj/obj.cpp.o
 .PHONY : vcl/shape/mesh/mesh_loader/obj/obj.cpp.o
 
 vcl/shape/mesh/mesh_loader/obj/obj.i: vcl/shape/mesh/mesh_loader/obj/obj.cpp.i
@@ -1748,7 +1778,7 @@ vcl/shape/mesh/mesh_loader/obj/obj.i: vcl/shape/mesh/mesh_loader/obj/obj.cpp.i
 
 # target to preprocess a source file
 vcl/shape/mesh/mesh_loader/obj/obj.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_loader/obj/obj.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_loader/obj/obj.cpp.i
 .PHONY : vcl/shape/mesh/mesh_loader/obj/obj.cpp.i
 
 vcl/shape/mesh/mesh_loader/obj/obj.s: vcl/shape/mesh/mesh_loader/obj/obj.cpp.s
@@ -1757,7 +1787,7 @@ vcl/shape/mesh/mesh_loader/obj/obj.s: vcl/shape/mesh/mesh_loader/obj/obj.cpp.s
 
 # target to generate assembly for a file
 vcl/shape/mesh/mesh_loader/obj/obj.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_loader/obj/obj.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_loader/obj/obj.cpp.s
 .PHONY : vcl/shape/mesh/mesh_loader/obj/obj.cpp.s
 
 vcl/shape/mesh/mesh_primitive/mesh_primitive.o: vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.o
@@ -1766,7 +1796,7 @@ vcl/shape/mesh/mesh_primitive/mesh_primitive.o: vcl/shape/mesh/mesh_primitive/me
 
 # target to build an object file
 vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.o
 .PHONY : vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.o
 
 vcl/shape/mesh/mesh_primitive/mesh_primitive.i: vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.i
@@ -1775,7 +1805,7 @@ vcl/shape/mesh/mesh_primitive/mesh_primitive.i: vcl/shape/mesh/mesh_primitive/me
 
 # target to preprocess a source file
 vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.i
 .PHONY : vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.i
 
 vcl/shape/mesh/mesh_primitive/mesh_primitive.s: vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.s
@@ -1784,7 +1814,7 @@ vcl/shape/mesh/mesh_primitive/mesh_primitive.s: vcl/shape/mesh/mesh_primitive/me
 
 # target to generate assembly for a file
 vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.s
 .PHONY : vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.s
 
 vcl/shape/mesh/mesh_structure/mesh.o: vcl/shape/mesh/mesh_structure/mesh.cpp.o
@@ -1793,7 +1823,7 @@ vcl/shape/mesh/mesh_structure/mesh.o: vcl/shape/mesh/mesh_structure/mesh.cpp.o
 
 # target to build an object file
 vcl/shape/mesh/mesh_structure/mesh.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_structure/mesh.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_structure/mesh.cpp.o
 .PHONY : vcl/shape/mesh/mesh_structure/mesh.cpp.o
 
 vcl/shape/mesh/mesh_structure/mesh.i: vcl/shape/mesh/mesh_structure/mesh.cpp.i
@@ -1802,7 +1832,7 @@ vcl/shape/mesh/mesh_structure/mesh.i: vcl/shape/mesh/mesh_structure/mesh.cpp.i
 
 # target to preprocess a source file
 vcl/shape/mesh/mesh_structure/mesh.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_structure/mesh.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_structure/mesh.cpp.i
 .PHONY : vcl/shape/mesh/mesh_structure/mesh.cpp.i
 
 vcl/shape/mesh/mesh_structure/mesh.s: vcl/shape/mesh/mesh_structure/mesh.cpp.s
@@ -1811,7 +1841,7 @@ vcl/shape/mesh/mesh_structure/mesh.s: vcl/shape/mesh/mesh_structure/mesh.cpp.s
 
 # target to generate assembly for a file
 vcl/shape/mesh/mesh_structure/mesh.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_structure/mesh.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_structure/mesh.cpp.s
 .PHONY : vcl/shape/mesh/mesh_structure/mesh.cpp.s
 
 vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.o: vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.o
@@ -1820,7 +1850,7 @@ vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mod
 
 # target to build an object file
 vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.o
 .PHONY : vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.o
 
 vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.i: vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.i
@@ -1829,7 +1859,7 @@ vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mod
 
 # target to preprocess a source file
 vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.i
 .PHONY : vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.i
 
 vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.s: vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.s
@@ -1838,7 +1868,7 @@ vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mod
 
 # target to generate assembly for a file
 vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.s
 .PHONY : vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.s
 
 vcl/shape/segment/segments_drawable/segments_drawable.o: vcl/shape/segment/segments_drawable/segments_drawable.cpp.o
@@ -1847,7 +1877,7 @@ vcl/shape/segment/segments_drawable/segments_drawable.o: vcl/shape/segment/segme
 
 # target to build an object file
 vcl/shape/segment/segments_drawable/segments_drawable.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable.cpp.o
 .PHONY : vcl/shape/segment/segments_drawable/segments_drawable.cpp.o
 
 vcl/shape/segment/segments_drawable/segments_drawable.i: vcl/shape/segment/segments_drawable/segments_drawable.cpp.i
@@ -1856,7 +1886,7 @@ vcl/shape/segment/segments_drawable/segments_drawable.i: vcl/shape/segment/segme
 
 # target to preprocess a source file
 vcl/shape/segment/segments_drawable/segments_drawable.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable.cpp.i
 .PHONY : vcl/shape/segment/segments_drawable/segments_drawable.cpp.i
 
 vcl/shape/segment/segments_drawable/segments_drawable.s: vcl/shape/segment/segments_drawable/segments_drawable.cpp.s
@@ -1865,7 +1895,7 @@ vcl/shape/segment/segments_drawable/segments_drawable.s: vcl/shape/segment/segme
 
 # target to generate assembly for a file
 vcl/shape/segment/segments_drawable/segments_drawable.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable.cpp.s
 .PHONY : vcl/shape/segment/segments_drawable/segments_drawable.cpp.s
 
 vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.o: vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.o
@@ -1874,7 +1904,7 @@ vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_
 
 # target to build an object file
 vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.o
 .PHONY : vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.o
 
 vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.i: vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.i
@@ -1883,7 +1913,7 @@ vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_
 
 # target to preprocess a source file
 vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.i
 .PHONY : vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.i
 
 vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.s: vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.s
@@ -1892,7 +1922,7 @@ vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_
 
 # target to generate assembly for a file
 vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.s
 .PHONY : vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.s
 
 vcl/shape/segment/segments_gpu/segments_gpu.o: vcl/shape/segment/segments_gpu/segments_gpu.cpp.o
@@ -1901,7 +1931,7 @@ vcl/shape/segment/segments_gpu/segments_gpu.o: vcl/shape/segment/segments_gpu/se
 
 # target to build an object file
 vcl/shape/segment/segments_gpu/segments_gpu.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segments_gpu/segments_gpu.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segments_gpu/segments_gpu.cpp.o
 .PHONY : vcl/shape/segment/segments_gpu/segments_gpu.cpp.o
 
 vcl/shape/segment/segments_gpu/segments_gpu.i: vcl/shape/segment/segments_gpu/segments_gpu.cpp.i
@@ -1910,7 +1940,7 @@ vcl/shape/segment/segments_gpu/segments_gpu.i: vcl/shape/segment/segments_gpu/se
 
 # target to preprocess a source file
 vcl/shape/segment/segments_gpu/segments_gpu.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segments_gpu/segments_gpu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segments_gpu/segments_gpu.cpp.i
 .PHONY : vcl/shape/segment/segments_gpu/segments_gpu.cpp.i
 
 vcl/shape/segment/segments_gpu/segments_gpu.s: vcl/shape/segment/segments_gpu/segments_gpu.cpp.s
@@ -1919,7 +1949,7 @@ vcl/shape/segment/segments_gpu/segments_gpu.s: vcl/shape/segment/segments_gpu/se
 
 # target to generate assembly for a file
 vcl/shape/segment/segments_gpu/segments_gpu.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segments_gpu/segments_gpu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/shape/segment/segments_gpu/segments_gpu.cpp.s
 .PHONY : vcl/shape/segment/segments_gpu/segments_gpu.cpp.s
 
 vcl/wrapper/glfw/events/events.o: vcl/wrapper/glfw/events/events.cpp.o
@@ -1928,7 +1958,7 @@ vcl/wrapper/glfw/events/events.o: vcl/wrapper/glfw/events/events.cpp.o
 
 # target to build an object file
 vcl/wrapper/glfw/events/events.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/glfw/events/events.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/glfw/events/events.cpp.o
 .PHONY : vcl/wrapper/glfw/events/events.cpp.o
 
 vcl/wrapper/glfw/events/events.i: vcl/wrapper/glfw/events/events.cpp.i
@@ -1937,7 +1967,7 @@ vcl/wrapper/glfw/events/events.i: vcl/wrapper/glfw/events/events.cpp.i
 
 # target to preprocess a source file
 vcl/wrapper/glfw/events/events.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/glfw/events/events.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/glfw/events/events.cpp.i
 .PHONY : vcl/wrapper/glfw/events/events.cpp.i
 
 vcl/wrapper/glfw/events/events.s: vcl/wrapper/glfw/events/events.cpp.s
@@ -1946,7 +1976,7 @@ vcl/wrapper/glfw/events/events.s: vcl/wrapper/glfw/events/events.cpp.s
 
 # target to generate assembly for a file
 vcl/wrapper/glfw/events/events.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/glfw/events/events.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/glfw/events/events.cpp.s
 .PHONY : vcl/wrapper/glfw/events/events.cpp.s
 
 vcl/wrapper/glfw/fps_counter/fps_counter.o: vcl/wrapper/glfw/fps_counter/fps_counter.cpp.o
@@ -1955,7 +1985,7 @@ vcl/wrapper/glfw/fps_counter/fps_counter.o: vcl/wrapper/glfw/fps_counter/fps_cou
 
 # target to build an object file
 vcl/wrapper/glfw/fps_counter/fps_counter.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/glfw/fps_counter/fps_counter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/glfw/fps_counter/fps_counter.cpp.o
 .PHONY : vcl/wrapper/glfw/fps_counter/fps_counter.cpp.o
 
 vcl/wrapper/glfw/fps_counter/fps_counter.i: vcl/wrapper/glfw/fps_counter/fps_counter.cpp.i
@@ -1964,7 +1994,7 @@ vcl/wrapper/glfw/fps_counter/fps_counter.i: vcl/wrapper/glfw/fps_counter/fps_cou
 
 # target to preprocess a source file
 vcl/wrapper/glfw/fps_counter/fps_counter.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/glfw/fps_counter/fps_counter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/glfw/fps_counter/fps_counter.cpp.i
 .PHONY : vcl/wrapper/glfw/fps_counter/fps_counter.cpp.i
 
 vcl/wrapper/glfw/fps_counter/fps_counter.s: vcl/wrapper/glfw/fps_counter/fps_counter.cpp.s
@@ -1973,7 +2003,7 @@ vcl/wrapper/glfw/fps_counter/fps_counter.s: vcl/wrapper/glfw/fps_counter/fps_cou
 
 # target to generate assembly for a file
 vcl/wrapper/glfw/fps_counter/fps_counter.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/glfw/fps_counter/fps_counter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/glfw/fps_counter/fps_counter.cpp.s
 .PHONY : vcl/wrapper/glfw/fps_counter/fps_counter.cpp.s
 
 vcl/wrapper/glfw/window/window.o: vcl/wrapper/glfw/window/window.cpp.o
@@ -1982,7 +2012,7 @@ vcl/wrapper/glfw/window/window.o: vcl/wrapper/glfw/window/window.cpp.o
 
 # target to build an object file
 vcl/wrapper/glfw/window/window.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/glfw/window/window.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/glfw/window/window.cpp.o
 .PHONY : vcl/wrapper/glfw/window/window.cpp.o
 
 vcl/wrapper/glfw/window/window.i: vcl/wrapper/glfw/window/window.cpp.i
@@ -1991,7 +2021,7 @@ vcl/wrapper/glfw/window/window.i: vcl/wrapper/glfw/window/window.cpp.i
 
 # target to preprocess a source file
 vcl/wrapper/glfw/window/window.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/glfw/window/window.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/glfw/window/window.cpp.i
 .PHONY : vcl/wrapper/glfw/window/window.cpp.i
 
 vcl/wrapper/glfw/window/window.s: vcl/wrapper/glfw/window/window.cpp.s
@@ -2000,7 +2030,7 @@ vcl/wrapper/glfw/window/window.s: vcl/wrapper/glfw/window/window.cpp.s
 
 # target to generate assembly for a file
 vcl/wrapper/glfw/window/window.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/glfw/window/window.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/glfw/window/window.cpp.s
 .PHONY : vcl/wrapper/glfw/window/window.cpp.s
 
 vcl/wrapper/imgui/imgui.o: vcl/wrapper/imgui/imgui.cpp.o
@@ -2009,7 +2039,7 @@ vcl/wrapper/imgui/imgui.o: vcl/wrapper/imgui/imgui.cpp.o
 
 # target to build an object file
 vcl/wrapper/imgui/imgui.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/imgui/imgui.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/imgui/imgui.cpp.o
 .PHONY : vcl/wrapper/imgui/imgui.cpp.o
 
 vcl/wrapper/imgui/imgui.i: vcl/wrapper/imgui/imgui.cpp.i
@@ -2018,7 +2048,7 @@ vcl/wrapper/imgui/imgui.i: vcl/wrapper/imgui/imgui.cpp.i
 
 # target to preprocess a source file
 vcl/wrapper/imgui/imgui.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/imgui/imgui.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/imgui/imgui.cpp.i
 .PHONY : vcl/wrapper/imgui/imgui.cpp.i
 
 vcl/wrapper/imgui/imgui.s: vcl/wrapper/imgui/imgui.cpp.s
@@ -2027,7 +2057,7 @@ vcl/wrapper/imgui/imgui.s: vcl/wrapper/imgui/imgui.cpp.s
 
 # target to generate assembly for a file
 vcl/wrapper/imgui/imgui.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/imgui/imgui.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/imgui/imgui.cpp.s
 .PHONY : vcl/wrapper/imgui/imgui.cpp.s
 
 vcl/wrapper/lodepng/lodepng.o: vcl/wrapper/lodepng/lodepng.cpp.o
@@ -2036,7 +2066,7 @@ vcl/wrapper/lodepng/lodepng.o: vcl/wrapper/lodepng/lodepng.cpp.o
 
 # target to build an object file
 vcl/wrapper/lodepng/lodepng.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/lodepng/lodepng.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/lodepng/lodepng.cpp.o
 .PHONY : vcl/wrapper/lodepng/lodepng.cpp.o
 
 vcl/wrapper/lodepng/lodepng.i: vcl/wrapper/lodepng/lodepng.cpp.i
@@ -2045,7 +2075,7 @@ vcl/wrapper/lodepng/lodepng.i: vcl/wrapper/lodepng/lodepng.cpp.i
 
 # target to preprocess a source file
 vcl/wrapper/lodepng/lodepng.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/lodepng/lodepng.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/lodepng/lodepng.cpp.i
 .PHONY : vcl/wrapper/lodepng/lodepng.cpp.i
 
 vcl/wrapper/lodepng/lodepng.s: vcl/wrapper/lodepng/lodepng.cpp.s
@@ -2054,7 +2084,7 @@ vcl/wrapper/lodepng/lodepng.s: vcl/wrapper/lodepng/lodepng.cpp.s
 
 # target to generate assembly for a file
 vcl/wrapper/lodepng/lodepng.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/lodepng/lodepng.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/lodepng/lodepng.cpp.s
 .PHONY : vcl/wrapper/lodepng/lodepng.cpp.s
 
 vcl/wrapper/perlin/perlin.o: vcl/wrapper/perlin/perlin.cpp.o
@@ -2063,7 +2093,7 @@ vcl/wrapper/perlin/perlin.o: vcl/wrapper/perlin/perlin.cpp.o
 
 # target to build an object file
 vcl/wrapper/perlin/perlin.cpp.o:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/perlin/perlin.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/perlin/perlin.cpp.o
 .PHONY : vcl/wrapper/perlin/perlin.cpp.o
 
 vcl/wrapper/perlin/perlin.i: vcl/wrapper/perlin/perlin.cpp.i
@@ -2072,7 +2102,7 @@ vcl/wrapper/perlin/perlin.i: vcl/wrapper/perlin/perlin.cpp.i
 
 # target to preprocess a source file
 vcl/wrapper/perlin/perlin.cpp.i:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/perlin/perlin.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/perlin/perlin.cpp.i
 .PHONY : vcl/wrapper/perlin/perlin.cpp.i
 
 vcl/wrapper/perlin/perlin.s: vcl/wrapper/perlin/perlin.cpp.s
@@ -2081,7 +2111,7 @@ vcl/wrapper/perlin/perlin.s: vcl/wrapper/perlin/perlin.cpp.s
 
 # target to generate assembly for a file
 vcl/wrapper/perlin/perlin.cpp.s:
-	$(MAKE) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/perlin/perlin.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/vcl/wrapper/perlin/perlin.cpp.s
 .PHONY : vcl/wrapper/perlin/perlin.cpp.s
 
 # Help Target
@@ -2102,6 +2132,9 @@ help:
 	@echo "... main/scene_base/base.o"
 	@echo "... main/scene_base/base.i"
 	@echo "... main/scene_base/base.s"
+	@echo "... scenes/3D_graphics/00_default/Hitbox.o"
+	@echo "... scenes/3D_graphics/00_default/Hitbox.i"
+	@echo "... scenes/3D_graphics/00_default/Hitbox.s"
 	@echo "... scenes/3D_graphics/00_default/default.o"
 	@echo "... scenes/3D_graphics/00_default/default.i"
 	@echo "... scenes/3D_graphics/00_default/default.s"
