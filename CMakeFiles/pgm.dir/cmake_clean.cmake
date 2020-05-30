@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/pgm.dir/main/helper_scene/helper_scene.cpp.o"
   "CMakeFiles/pgm.dir/main/main.cpp.o"
   "CMakeFiles/pgm.dir/main/scene_base/base.cpp.o"
+  "CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.o"
   "CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.o"
   "CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/default.cpp.o"
   "CMakeFiles/pgm.dir/scenes/3D_graphics/01_modeling/modeling.cpp.o"

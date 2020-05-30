@@ -116,9 +116,22 @@ CMakeFiles/pgm.dir/main/scene_base/base.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgm.dir/main/scene_base/base.cpp.s"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tris/Devoirs/2019-2020/INF443/project/main/scene_base/base.cpp -o CMakeFiles/pgm.dir/main/scene_base/base.cpp.s
 
+CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.o: CMakeFiles/pgm.dir/flags.make
+CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.o: scenes/3D_graphics/00_default/Character.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/00_default/Character.cpp
+
+CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.i"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/00_default/Character.cpp > CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.i
+
+CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.s"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/00_default/Character.cpp -o CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.s
+
 CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.o: scenes/3D_graphics/00_default/Hitbox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/00_default/Hitbox.cpp
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.i: cmake_force
@@ -131,7 +144,7 @@ CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/default.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/default.cpp.o: scenes/3D_graphics/00_default/default.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/default.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/default.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/default.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/00_default/default.cpp
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/default.cpp.i: cmake_force
@@ -144,7 +157,7 @@ CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/default.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/01_modeling/modeling.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/scenes/3D_graphics/01_modeling/modeling.cpp.o: scenes/3D_graphics/01_modeling/modeling.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/01_modeling/modeling.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/01_modeling/modeling.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/scenes/3D_graphics/01_modeling/modeling.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/01_modeling/modeling.cpp
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/01_modeling/modeling.cpp.i: cmake_force
@@ -157,7 +170,7 @@ CMakeFiles/pgm.dir/scenes/3D_graphics/01_modeling/modeling.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_billboard.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_billboard.cpp.o: scenes/3D_graphics/02_texture/example_billboard.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_billboard.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_billboard.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_billboard.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/02_texture/example_billboard.cpp
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_billboard.cpp.i: cmake_force
@@ -170,7 +183,7 @@ CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_billboard.cpp.s: cmake_
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_perlin.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_perlin.cpp.o: scenes/3D_graphics/02_texture/example_perlin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_perlin.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_perlin.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_perlin.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/02_texture/example_perlin.cpp
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_perlin.cpp.i: cmake_force
@@ -183,7 +196,7 @@ CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_perlin.cpp.s: cmake_for
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_texture.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_texture.cpp.o: scenes/3D_graphics/02_texture/example_texture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_texture.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_texture.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_texture.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/02_texture/example_texture.cpp
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_texture.cpp.i: cmake_force
@@ -196,7 +209,7 @@ CMakeFiles/pgm.dir/scenes/3D_graphics/02_texture/example_texture.cpp.s: cmake_fo
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.o: scenes/3D_graphics/03_animation/articulated_hierarchy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/03_animation/articulated_hierarchy.cpp
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.i: cmake_force
@@ -209,7 +222,7 @@ CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/articulated_hierarchy.cpp.s: 
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/interpolation_position.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/interpolation_position.cpp.o: scenes/3D_graphics/03_animation/interpolation_position.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/interpolation_position.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/interpolation_position.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/interpolation_position.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/03_animation/interpolation_position.cpp
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/interpolation_position.cpp.i: cmake_force
@@ -222,7 +235,7 @@ CMakeFiles/pgm.dir/scenes/3D_graphics/03_animation/interpolation_position.cpp.s:
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_mass_spring.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_mass_spring.cpp.o: scenes/3D_graphics/04_simulation/example_mass_spring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_mass_spring.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_mass_spring.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_mass_spring.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/04_simulation/example_mass_spring.cpp
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_mass_spring.cpp.i: cmake_force
@@ -235,7 +248,7 @@ CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_mass_spring.cpp.s: c
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.o: scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.i: cmake_force
@@ -248,7 +261,7 @@ CMakeFiles/pgm.dir/scenes/3D_graphics/04_simulation/example_sphere_gravity.cpp.s
 
 CMakeFiles/pgm.dir/third_party/glad/src/glad.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/third_party/glad/src/glad.cpp.o: third_party/glad/src/glad.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/pgm.dir/third_party/glad/src/glad.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/pgm.dir/third_party/glad/src/glad.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/third_party/glad/src/glad.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/third_party/glad/src/glad.cpp
 
 CMakeFiles/pgm.dir/third_party/glad/src/glad.cpp.i: cmake_force
@@ -261,7 +274,7 @@ CMakeFiles/pgm.dir/third_party/glad/src/glad.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/third_party/imgui/imgui.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/third_party/imgui/imgui.cpp.o: third_party/imgui/imgui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/pgm.dir/third_party/imgui/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/pgm.dir/third_party/imgui/imgui.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/third_party/imgui/imgui.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/third_party/imgui/imgui.cpp
 
 CMakeFiles/pgm.dir/third_party/imgui/imgui.cpp.i: cmake_force
@@ -274,7 +287,7 @@ CMakeFiles/pgm.dir/third_party/imgui/imgui.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/third_party/imgui/imgui_demo.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/third_party/imgui/imgui_demo.cpp.o: third_party/imgui/imgui_demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/pgm.dir/third_party/imgui/imgui_demo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/pgm.dir/third_party/imgui/imgui_demo.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/third_party/imgui/imgui_demo.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/third_party/imgui/imgui_demo.cpp
 
 CMakeFiles/pgm.dir/third_party/imgui/imgui_demo.cpp.i: cmake_force
@@ -287,7 +300,7 @@ CMakeFiles/pgm.dir/third_party/imgui/imgui_demo.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/third_party/imgui/imgui_draw.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/third_party/imgui/imgui_draw.cpp.o: third_party/imgui/imgui_draw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/pgm.dir/third_party/imgui/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/pgm.dir/third_party/imgui/imgui_draw.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/third_party/imgui/imgui_draw.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/third_party/imgui/imgui_draw.cpp
 
 CMakeFiles/pgm.dir/third_party/imgui/imgui_draw.cpp.i: cmake_force
@@ -300,7 +313,7 @@ CMakeFiles/pgm.dir/third_party/imgui/imgui_draw.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_glfw.cpp.o: third_party/imgui/imgui_impl_glfw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_glfw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_glfw.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_glfw.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/third_party/imgui/imgui_impl_glfw.cpp
 
 CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_glfw.cpp.i: cmake_force
@@ -313,7 +326,7 @@ CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_glfw.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_opengl3.cpp.o: third_party/imgui/imgui_impl_opengl3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_opengl3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_opengl3.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_opengl3.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/third_party/imgui/imgui_impl_opengl3.cpp
 
 CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_opengl3.cpp.i: cmake_force
@@ -326,7 +339,7 @@ CMakeFiles/pgm.dir/third_party/imgui/imgui_impl_opengl3.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/third_party/imgui/imgui_widgets.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/third_party/imgui/imgui_widgets.cpp.o: third_party/imgui/imgui_widgets.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/pgm.dir/third_party/imgui/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/pgm.dir/third_party/imgui/imgui_widgets.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/third_party/imgui/imgui_widgets.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/third_party/imgui/imgui_widgets.cpp
 
 CMakeFiles/pgm.dir/third_party/imgui/imgui_widgets.cpp.i: cmake_force
@@ -339,7 +352,7 @@ CMakeFiles/pgm.dir/third_party/imgui/imgui_widgets.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/third_party/lodepng/lodepng.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/third_party/lodepng/lodepng.cpp.o: third_party/lodepng/lodepng.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/pgm.dir/third_party/lodepng/lodepng.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/pgm.dir/third_party/lodepng/lodepng.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/third_party/lodepng/lodepng.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/third_party/lodepng/lodepng.cpp
 
 CMakeFiles/pgm.dir/third_party/lodepng/lodepng.cpp.i: cmake_force
@@ -352,7 +365,7 @@ CMakeFiles/pgm.dir/third_party/lodepng/lodepng.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/third_party/simplexnoise/simplexnoise1234.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/third_party/simplexnoise/simplexnoise1234.cpp.o: third_party/simplexnoise/simplexnoise1234.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/pgm.dir/third_party/simplexnoise/simplexnoise1234.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/pgm.dir/third_party/simplexnoise/simplexnoise1234.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/third_party/simplexnoise/simplexnoise1234.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/third_party/simplexnoise/simplexnoise1234.cpp
 
 CMakeFiles/pgm.dir/third_party/simplexnoise/simplexnoise1234.cpp.i: cmake_force
@@ -365,7 +378,7 @@ CMakeFiles/pgm.dir/third_party/simplexnoise/simplexnoise1234.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/base/basic_types/basic_types.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/base/basic_types/basic_types.cpp.o: vcl/base/basic_types/basic_types.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/pgm.dir/vcl/base/basic_types/basic_types.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/pgm.dir/vcl/base/basic_types/basic_types.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/base/basic_types/basic_types.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/base/basic_types/basic_types.cpp
 
 CMakeFiles/pgm.dir/vcl/base/basic_types/basic_types.cpp.i: cmake_force
@@ -378,7 +391,7 @@ CMakeFiles/pgm.dir/vcl/base/basic_types/basic_types.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/base/error/error.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/base/error/error.cpp.o: vcl/base/error/error.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/pgm.dir/vcl/base/error/error.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/pgm.dir/vcl/base/error/error.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/base/error/error.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/base/error/error.cpp
 
 CMakeFiles/pgm.dir/vcl/base/error/error.cpp.i: cmake_force
@@ -391,7 +404,7 @@ CMakeFiles/pgm.dir/vcl/base/error/error.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/base/file/file.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/base/file/file.cpp.o: vcl/base/file/file.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/pgm.dir/vcl/base/file/file.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/pgm.dir/vcl/base/file/file.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/base/file/file.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/base/file/file.cpp
 
 CMakeFiles/pgm.dir/vcl/base/file/file.cpp.i: cmake_force
@@ -404,7 +417,7 @@ CMakeFiles/pgm.dir/vcl/base/file/file.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/base/rand/rand.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/base/rand/rand.cpp.o: vcl/base/rand/rand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/pgm.dir/vcl/base/rand/rand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/pgm.dir/vcl/base/rand/rand.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/base/rand/rand.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/base/rand/rand.cpp
 
 CMakeFiles/pgm.dir/vcl/base/rand/rand.cpp.i: cmake_force
@@ -417,7 +430,7 @@ CMakeFiles/pgm.dir/vcl/base/rand/rand.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/base/string/string.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/base/string/string.cpp.o: vcl/base/string/string.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/pgm.dir/vcl/base/string/string.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/pgm.dir/vcl/base/string/string.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/base/string/string.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/base/string/string.cpp
 
 CMakeFiles/pgm.dir/vcl/base/string/string.cpp.i: cmake_force
@@ -430,7 +443,7 @@ CMakeFiles/pgm.dir/vcl/base/string/string.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/interaction/camera/camera.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/interaction/camera/camera.cpp.o: vcl/interaction/camera/camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/pgm.dir/vcl/interaction/camera/camera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/pgm.dir/vcl/interaction/camera/camera.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/interaction/camera/camera.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/camera/camera.cpp
 
 CMakeFiles/pgm.dir/vcl/interaction/camera/camera.cpp.i: cmake_force
@@ -443,7 +456,7 @@ CMakeFiles/pgm.dir/vcl/interaction/camera/camera.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.o: vcl/interaction/camera_control_glfw/camera_control_glfw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/pgm.dir/vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/pgm.dir/vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/camera_control_glfw/camera_control_glfw.cpp
 
 CMakeFiles/pgm.dir/vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.i: cmake_force
@@ -456,7 +469,7 @@ CMakeFiles/pgm.dir/vcl/interaction/camera_control_glfw/camera_control_glfw.cpp.s
 
 CMakeFiles/pgm.dir/vcl/interaction/picking/info/picking_info.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/interaction/picking/info/picking_info.cpp.o: vcl/interaction/picking/info/picking_info.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/pgm.dir/vcl/interaction/picking/info/picking_info.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/pgm.dir/vcl/interaction/picking/info/picking_info.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/interaction/picking/info/picking_info.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/picking/info/picking_info.cpp
 
 CMakeFiles/pgm.dir/vcl/interaction/picking/info/picking_info.cpp.i: cmake_force
@@ -469,7 +482,7 @@ CMakeFiles/pgm.dir/vcl/interaction/picking/info/picking_info.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/interaction/picking/primitives/picking_primitives.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/interaction/picking/primitives/picking_primitives.cpp.o: vcl/interaction/picking/primitives/picking_primitives.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/pgm.dir/vcl/interaction/picking/primitives/picking_primitives.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/pgm.dir/vcl/interaction/picking/primitives/picking_primitives.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/interaction/picking/primitives/picking_primitives.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/picking/primitives/picking_primitives.cpp
 
 CMakeFiles/pgm.dir/vcl/interaction/picking/primitives/picking_primitives.cpp.i: cmake_force
@@ -482,7 +495,7 @@ CMakeFiles/pgm.dir/vcl/interaction/picking/primitives/picking_primitives.cpp.s: 
 
 CMakeFiles/pgm.dir/vcl/interaction/picking/ray/picking_ray.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/interaction/picking/ray/picking_ray.cpp.o: vcl/interaction/picking/ray/picking_ray.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/pgm.dir/vcl/interaction/picking/ray/picking_ray.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/pgm.dir/vcl/interaction/picking/ray/picking_ray.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/interaction/picking/ray/picking_ray.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/picking/ray/picking_ray.cpp
 
 CMakeFiles/pgm.dir/vcl/interaction/picking/ray/picking_ray.cpp.i: cmake_force
@@ -495,7 +508,7 @@ CMakeFiles/pgm.dir/vcl/interaction/picking/ray/picking_ray.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/interaction/screen_motion/screen_motion.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/interaction/screen_motion/screen_motion.cpp.o: vcl/interaction/screen_motion/screen_motion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/pgm.dir/vcl/interaction/screen_motion/screen_motion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/pgm.dir/vcl/interaction/screen_motion/screen_motion.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/interaction/screen_motion/screen_motion.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/screen_motion/screen_motion.cpp
 
 CMakeFiles/pgm.dir/vcl/interaction/screen_motion/screen_motion.cpp.i: cmake_force
@@ -508,7 +521,7 @@ CMakeFiles/pgm.dir/vcl/interaction/screen_motion/screen_motion.cpp.s: cmake_forc
 
 CMakeFiles/pgm.dir/vcl/interaction/time_period/time_period.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/interaction/time_period/time_period.cpp.o: vcl/interaction/time_period/time_period.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/pgm.dir/vcl/interaction/time_period/time_period.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/pgm.dir/vcl/interaction/time_period/time_period.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/interaction/time_period/time_period.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/time_period/time_period.cpp
 
 CMakeFiles/pgm.dir/vcl/interaction/time_period/time_period.cpp.i: cmake_force
@@ -521,7 +534,7 @@ CMakeFiles/pgm.dir/vcl/interaction/time_period/time_period.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/interaction/time_slider/time_slider.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/interaction/time_slider/time_slider.cpp.o: vcl/interaction/time_slider/time_slider.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/pgm.dir/vcl/interaction/time_slider/time_slider.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/pgm.dir/vcl/interaction/time_slider/time_slider.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/interaction/time_slider/time_slider.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/time_slider/time_slider.cpp
 
 CMakeFiles/pgm.dir/vcl/interaction/time_slider/time_slider.cpp.i: cmake_force
@@ -534,7 +547,7 @@ CMakeFiles/pgm.dir/vcl/interaction/time_slider/time_slider.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/math/helper_functions/linspace/linspace.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/math/helper_functions/linspace/linspace.cpp.o: vcl/math/helper_functions/linspace/linspace.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/pgm.dir/vcl/math/helper_functions/linspace/linspace.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/pgm.dir/vcl/math/helper_functions/linspace/linspace.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/math/helper_functions/linspace/linspace.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/helper_functions/linspace/linspace.cpp
 
 CMakeFiles/pgm.dir/vcl/math/helper_functions/linspace/linspace.cpp.i: cmake_force
@@ -547,7 +560,7 @@ CMakeFiles/pgm.dir/vcl/math/helper_functions/linspace/linspace.cpp.s: cmake_forc
 
 CMakeFiles/pgm.dir/vcl/math/helper_functions/norm/norm.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/math/helper_functions/norm/norm.cpp.o: vcl/math/helper_functions/norm/norm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/pgm.dir/vcl/math/helper_functions/norm/norm.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/pgm.dir/vcl/math/helper_functions/norm/norm.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/math/helper_functions/norm/norm.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/helper_functions/norm/norm.cpp
 
 CMakeFiles/pgm.dir/vcl/math/helper_functions/norm/norm.cpp.i: cmake_force
@@ -560,7 +573,7 @@ CMakeFiles/pgm.dir/vcl/math/helper_functions/norm/norm.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/math/mat/mat2/mat2.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/math/mat/mat2/mat2.cpp.o: vcl/math/mat/mat2/mat2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/pgm.dir/vcl/math/mat/mat2/mat2.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/pgm.dir/vcl/math/mat/mat2/mat2.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/math/mat/mat2/mat2.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat2/mat2.cpp
 
 CMakeFiles/pgm.dir/vcl/math/mat/mat2/mat2.cpp.i: cmake_force
@@ -573,7 +586,7 @@ CMakeFiles/pgm.dir/vcl/math/mat/mat2/mat2.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/math/mat/mat3/mat3.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/math/mat/mat3/mat3.cpp.o: vcl/math/mat/mat3/mat3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/pgm.dir/vcl/math/mat/mat3/mat3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/pgm.dir/vcl/math/mat/mat3/mat3.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/math/mat/mat3/mat3.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat3/mat3.cpp
 
 CMakeFiles/pgm.dir/vcl/math/mat/mat3/mat3.cpp.i: cmake_force
@@ -586,7 +599,7 @@ CMakeFiles/pgm.dir/vcl/math/mat/mat3/mat3.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/math/mat/mat4/mat4.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/math/mat/mat4/mat4.cpp.o: vcl/math/mat/mat4/mat4.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/pgm.dir/vcl/math/mat/mat4/mat4.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/pgm.dir/vcl/math/mat/mat4/mat4.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/math/mat/mat4/mat4.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat4/mat4.cpp
 
 CMakeFiles/pgm.dir/vcl/math/mat/mat4/mat4.cpp.i: cmake_force
@@ -599,7 +612,7 @@ CMakeFiles/pgm.dir/vcl/math/mat/mat4/mat4.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/math/transformation/affine_transform/affine_transform.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/math/transformation/affine_transform/affine_transform.cpp.o: vcl/math/transformation/affine_transform/affine_transform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/pgm.dir/vcl/math/transformation/affine_transform/affine_transform.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/pgm.dir/vcl/math/transformation/affine_transform/affine_transform.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/math/transformation/affine_transform/affine_transform.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/transformation/affine_transform/affine_transform.cpp
 
 CMakeFiles/pgm.dir/vcl/math/transformation/affine_transform/affine_transform.cpp.i: cmake_force
@@ -612,7 +625,7 @@ CMakeFiles/pgm.dir/vcl/math/transformation/affine_transform/affine_transform.cpp
 
 CMakeFiles/pgm.dir/vcl/math/transformation/special_transform/special_transform.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/math/transformation/special_transform/special_transform.cpp.o: vcl/math/transformation/special_transform/special_transform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/pgm.dir/vcl/math/transformation/special_transform/special_transform.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/pgm.dir/vcl/math/transformation/special_transform/special_transform.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/math/transformation/special_transform/special_transform.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/transformation/special_transform/special_transform.cpp
 
 CMakeFiles/pgm.dir/vcl/math/transformation/special_transform/special_transform.cpp.i: cmake_force
@@ -625,7 +638,7 @@ CMakeFiles/pgm.dir/vcl/math/transformation/special_transform/special_transform.c
 
 CMakeFiles/pgm.dir/vcl/math/vec/vec2/vec2.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/math/vec/vec2/vec2.cpp.o: vcl/math/vec/vec2/vec2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/pgm.dir/vcl/math/vec/vec2/vec2.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/pgm.dir/vcl/math/vec/vec2/vec2.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/math/vec/vec2/vec2.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/vec/vec2/vec2.cpp
 
 CMakeFiles/pgm.dir/vcl/math/vec/vec2/vec2.cpp.i: cmake_force
@@ -638,7 +651,7 @@ CMakeFiles/pgm.dir/vcl/math/vec/vec2/vec2.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/math/vec/vec3/vec3.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/math/vec/vec3/vec3.cpp.o: vcl/math/vec/vec3/vec3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/pgm.dir/vcl/math/vec/vec3/vec3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/pgm.dir/vcl/math/vec/vec3/vec3.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/math/vec/vec3/vec3.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/vec/vec3/vec3.cpp
 
 CMakeFiles/pgm.dir/vcl/math/vec/vec3/vec3.cpp.i: cmake_force
@@ -651,7 +664,7 @@ CMakeFiles/pgm.dir/vcl/math/vec/vec3/vec3.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/math/vec/vec4/vec4.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/math/vec/vec4/vec4.cpp.o: vcl/math/vec/vec4/vec4.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/pgm.dir/vcl/math/vec/vec4/vec4.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/pgm.dir/vcl/math/vec/vec4/vec4.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/math/vec/vec4/vec4.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/vec/vec4/vec4.cpp
 
 CMakeFiles/pgm.dir/vcl/math/vec/vec4/vec4.cpp.i: cmake_force
@@ -664,7 +677,7 @@ CMakeFiles/pgm.dir/vcl/math/vec/vec4/vec4.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/opengl/debug/opengl_debug.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/opengl/debug/opengl_debug.cpp.o: vcl/opengl/debug/opengl_debug.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/pgm.dir/vcl/opengl/debug/opengl_debug.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/pgm.dir/vcl/opengl/debug/opengl_debug.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/opengl/debug/opengl_debug.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/debug/opengl_debug.cpp
 
 CMakeFiles/pgm.dir/vcl/opengl/debug/opengl_debug.cpp.i: cmake_force
@@ -677,7 +690,7 @@ CMakeFiles/pgm.dir/vcl/opengl/debug/opengl_debug.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/opengl/shader/shader.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/opengl/shader/shader.cpp.o: vcl/opengl/shader/shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/pgm.dir/vcl/opengl/shader/shader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/pgm.dir/vcl/opengl/shader/shader.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/opengl/shader/shader.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/shader/shader.cpp
 
 CMakeFiles/pgm.dir/vcl/opengl/shader/shader.cpp.i: cmake_force
@@ -690,7 +703,7 @@ CMakeFiles/pgm.dir/vcl/opengl/shader/shader.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/opengl/texture/image/image.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/opengl/texture/image/image.cpp.o: vcl/opengl/texture/image/image.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/pgm.dir/vcl/opengl/texture/image/image.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/pgm.dir/vcl/opengl/texture/image/image.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/opengl/texture/image/image.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/texture/image/image.cpp
 
 CMakeFiles/pgm.dir/vcl/opengl/texture/image/image.cpp.i: cmake_force
@@ -703,7 +716,7 @@ CMakeFiles/pgm.dir/vcl/opengl/texture/image/image.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/opengl/texture/texture_gpu/texture_gpu.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/opengl/texture/texture_gpu/texture_gpu.cpp.o: vcl/opengl/texture/texture_gpu/texture_gpu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/pgm.dir/vcl/opengl/texture/texture_gpu/texture_gpu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/pgm.dir/vcl/opengl/texture/texture_gpu/texture_gpu.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/opengl/texture/texture_gpu/texture_gpu.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/texture/texture_gpu/texture_gpu.cpp
 
 CMakeFiles/pgm.dir/vcl/opengl/texture/texture_gpu/texture_gpu.cpp.i: cmake_force
@@ -716,7 +729,7 @@ CMakeFiles/pgm.dir/vcl/opengl/texture/texture_gpu/texture_gpu.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/opengl/uniform/uniform.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/opengl/uniform/uniform.cpp.o: vcl/opengl/uniform/uniform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/pgm.dir/vcl/opengl/uniform/uniform.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/pgm.dir/vcl/opengl/uniform/uniform.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/opengl/uniform/uniform.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/uniform/uniform.cpp
 
 CMakeFiles/pgm.dir/vcl/opengl/uniform/uniform.cpp.i: cmake_force
@@ -729,7 +742,7 @@ CMakeFiles/pgm.dir/vcl/opengl/uniform/uniform.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/shape/curve/curve_drawable/curve_drawable.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/shape/curve/curve_drawable/curve_drawable.cpp.o: vcl/shape/curve/curve_drawable/curve_drawable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/curve/curve_drawable/curve_drawable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/curve/curve_drawable/curve_drawable.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/shape/curve/curve_drawable/curve_drawable.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_drawable/curve_drawable.cpp
 
 CMakeFiles/pgm.dir/vcl/shape/curve/curve_drawable/curve_drawable.cpp.i: cmake_force
@@ -742,7 +755,7 @@ CMakeFiles/pgm.dir/vcl/shape/curve/curve_drawable/curve_drawable.cpp.s: cmake_fo
 
 CMakeFiles/pgm.dir/vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.o: vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp
 
 CMakeFiles/pgm.dir/vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.cpp.i: cmake_force
@@ -755,7 +768,7 @@ CMakeFiles/pgm.dir/vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable
 
 CMakeFiles/pgm.dir/vcl/shape/curve/curve_gpu/curve_gpu.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/shape/curve/curve_gpu/curve_gpu.cpp.o: vcl/shape/curve/curve_gpu/curve_gpu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/curve/curve_gpu/curve_gpu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/curve/curve_gpu/curve_gpu.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/shape/curve/curve_gpu/curve_gpu.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_gpu/curve_gpu.cpp
 
 CMakeFiles/pgm.dir/vcl/shape/curve/curve_gpu/curve_gpu.cpp.i: cmake_force
@@ -768,7 +781,7 @@ CMakeFiles/pgm.dir/vcl/shape/curve/curve_gpu/curve_gpu.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/shape/curve/curve_primitive/curve_primitive.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/shape/curve/curve_primitive/curve_primitive.cpp.o: vcl/shape/curve/curve_primitive/curve_primitive.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/curve/curve_primitive/curve_primitive.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/curve/curve_primitive/curve_primitive.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/shape/curve/curve_primitive/curve_primitive.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_primitive/curve_primitive.cpp
 
 CMakeFiles/pgm.dir/vcl/shape/curve/curve_primitive/curve_primitive.cpp.i: cmake_force
@@ -781,7 +794,7 @@ CMakeFiles/pgm.dir/vcl/shape/curve/curve_primitive/curve_primitive.cpp.s: cmake_
 
 CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.o: vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp
 
 CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp.i: cmake_force
@@ -794,7 +807,7 @@ CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_me
 
 CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.o: vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp
 
 CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_display_skeleton/hierarchy_mesh_drawable_display_skeleton.cpp.i: cmake_force
@@ -807,7 +820,7 @@ CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_me
 
 CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.o: vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp
 
 CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_mesh_drawable_node/hierarchy_mesh_drawable_node.cpp.i: cmake_force
@@ -820,7 +833,7 @@ CMakeFiles/pgm.dir/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/hierarchy_me
 
 CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.o: vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp
 
 CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.i: cmake_force
@@ -833,7 +846,7 @@ CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.o: vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp
 
 CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_drawable_gpu_data.cpp.i: cmake_force
@@ -846,7 +859,7 @@ CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_gpu_data/mesh_draw
 
 CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.o: vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp
 
 CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawable_uniform.cpp.i: cmake_force
@@ -859,7 +872,7 @@ CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/mesh_drawa
 
 CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_loader/obj/obj.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_loader/obj/obj.cpp.o: vcl/shape/mesh/mesh_loader/obj/obj.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_loader/obj/obj.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_loader/obj/obj.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_loader/obj/obj.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_loader/obj/obj.cpp
 
 CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_loader/obj/obj.cpp.i: cmake_force
@@ -872,7 +885,7 @@ CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_loader/obj/obj.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.o: vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp
 
 CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.i: cmake_force
@@ -885,7 +898,7 @@ CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp.s: cmake_for
 
 CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_structure/mesh.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_structure/mesh.cpp.o: vcl/shape/mesh/mesh_structure/mesh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_structure/mesh.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_structure/mesh.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_structure/mesh.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_structure/mesh.cpp
 
 CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_structure/mesh.cpp.i: cmake_force
@@ -898,7 +911,7 @@ CMakeFiles/pgm.dir/vcl/shape/mesh/mesh_structure/mesh.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.o: vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp
 
 CMakeFiles/pgm.dir/vcl/shape/segment/segment_drawable_immediate_mode/segment_drawable_immediate_mode.cpp.i: cmake_force
@@ -911,7 +924,7 @@ CMakeFiles/pgm.dir/vcl/shape/segment/segment_drawable_immediate_mode/segment_dra
 
 CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable.cpp.o: vcl/shape/segment/segments_drawable/segments_drawable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segments_drawable/segments_drawable.cpp
 
 CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable.cpp.i: cmake_force
@@ -924,7 +937,7 @@ CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable.cpp.s: 
 
 CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.o: vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp
 
 CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable_uniform/segments_drawable_uniform.cpp.i: cmake_force
@@ -937,7 +950,7 @@ CMakeFiles/pgm.dir/vcl/shape/segment/segments_drawable/segments_drawable_uniform
 
 CMakeFiles/pgm.dir/vcl/shape/segment/segments_gpu/segments_gpu.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/shape/segment/segments_gpu/segments_gpu.cpp.o: vcl/shape/segment/segments_gpu/segments_gpu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/segment/segments_gpu/segments_gpu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/pgm.dir/vcl/shape/segment/segments_gpu/segments_gpu.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/shape/segment/segments_gpu/segments_gpu.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segments_gpu/segments_gpu.cpp
 
 CMakeFiles/pgm.dir/vcl/shape/segment/segments_gpu/segments_gpu.cpp.i: cmake_force
@@ -950,7 +963,7 @@ CMakeFiles/pgm.dir/vcl/shape/segment/segments_gpu/segments_gpu.cpp.s: cmake_forc
 
 CMakeFiles/pgm.dir/vcl/wrapper/glfw/events/events.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/wrapper/glfw/events/events.cpp.o: vcl/wrapper/glfw/events/events.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/pgm.dir/vcl/wrapper/glfw/events/events.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/pgm.dir/vcl/wrapper/glfw/events/events.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/wrapper/glfw/events/events.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/glfw/events/events.cpp
 
 CMakeFiles/pgm.dir/vcl/wrapper/glfw/events/events.cpp.i: cmake_force
@@ -963,7 +976,7 @@ CMakeFiles/pgm.dir/vcl/wrapper/glfw/events/events.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/wrapper/glfw/fps_counter/fps_counter.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/wrapper/glfw/fps_counter/fps_counter.cpp.o: vcl/wrapper/glfw/fps_counter/fps_counter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/pgm.dir/vcl/wrapper/glfw/fps_counter/fps_counter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/pgm.dir/vcl/wrapper/glfw/fps_counter/fps_counter.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/wrapper/glfw/fps_counter/fps_counter.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/glfw/fps_counter/fps_counter.cpp
 
 CMakeFiles/pgm.dir/vcl/wrapper/glfw/fps_counter/fps_counter.cpp.i: cmake_force
@@ -976,7 +989,7 @@ CMakeFiles/pgm.dir/vcl/wrapper/glfw/fps_counter/fps_counter.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/wrapper/glfw/window/window.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/wrapper/glfw/window/window.cpp.o: vcl/wrapper/glfw/window/window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/pgm.dir/vcl/wrapper/glfw/window/window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/pgm.dir/vcl/wrapper/glfw/window/window.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/wrapper/glfw/window/window.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/glfw/window/window.cpp
 
 CMakeFiles/pgm.dir/vcl/wrapper/glfw/window/window.cpp.i: cmake_force
@@ -989,7 +1002,7 @@ CMakeFiles/pgm.dir/vcl/wrapper/glfw/window/window.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/wrapper/imgui/imgui.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/wrapper/imgui/imgui.cpp.o: vcl/wrapper/imgui/imgui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/pgm.dir/vcl/wrapper/imgui/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/pgm.dir/vcl/wrapper/imgui/imgui.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/wrapper/imgui/imgui.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/imgui/imgui.cpp
 
 CMakeFiles/pgm.dir/vcl/wrapper/imgui/imgui.cpp.i: cmake_force
@@ -1002,7 +1015,7 @@ CMakeFiles/pgm.dir/vcl/wrapper/imgui/imgui.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/wrapper/lodepng/lodepng.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/wrapper/lodepng/lodepng.cpp.o: vcl/wrapper/lodepng/lodepng.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/pgm.dir/vcl/wrapper/lodepng/lodepng.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/pgm.dir/vcl/wrapper/lodepng/lodepng.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/wrapper/lodepng/lodepng.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/lodepng/lodepng.cpp
 
 CMakeFiles/pgm.dir/vcl/wrapper/lodepng/lodepng.cpp.i: cmake_force
@@ -1015,7 +1028,7 @@ CMakeFiles/pgm.dir/vcl/wrapper/lodepng/lodepng.cpp.s: cmake_force
 
 CMakeFiles/pgm.dir/vcl/wrapper/perlin/perlin.cpp.o: CMakeFiles/pgm.dir/flags.make
 CMakeFiles/pgm.dir/vcl/wrapper/perlin/perlin.cpp.o: vcl/wrapper/perlin/perlin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/pgm.dir/vcl/wrapper/perlin/perlin.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/pgm.dir/vcl/wrapper/perlin/perlin.cpp.o"
 	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgm.dir/vcl/wrapper/perlin/perlin.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/perlin/perlin.cpp
 
 CMakeFiles/pgm.dir/vcl/wrapper/perlin/perlin.cpp.i: cmake_force
@@ -1031,6 +1044,7 @@ pgm_OBJECTS = \
 "CMakeFiles/pgm.dir/main/helper_scene/helper_scene.cpp.o" \
 "CMakeFiles/pgm.dir/main/main.cpp.o" \
 "CMakeFiles/pgm.dir/main/scene_base/base.cpp.o" \
+"CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.o" \
 "CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.o" \
 "CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/default.cpp.o" \
 "CMakeFiles/pgm.dir/scenes/3D_graphics/01_modeling/modeling.cpp.o" \
@@ -1108,6 +1122,7 @@ pgm_EXTERNAL_OBJECTS =
 pgm: CMakeFiles/pgm.dir/main/helper_scene/helper_scene.cpp.o
 pgm: CMakeFiles/pgm.dir/main/main.cpp.o
 pgm: CMakeFiles/pgm.dir/main/scene_base/base.cpp.o
+pgm: CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.o
 pgm: CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.o
 pgm: CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/default.cpp.o
 pgm: CMakeFiles/pgm.dir/scenes/3D_graphics/01_modeling/modeling.cpp.o
@@ -1181,7 +1196,7 @@ pgm: CMakeFiles/pgm.dir/vcl/wrapper/perlin/perlin.cpp.o
 pgm: CMakeFiles/pgm.dir/build.make
 pgm: /usr/lib/libglfw.so.3.3
 pgm: CMakeFiles/pgm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Linking CXX executable pgm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Linking CXX executable pgm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pgm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

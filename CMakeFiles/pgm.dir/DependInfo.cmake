@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/tris/Devoirs/2019-2020/INF443/project/main/helper_scene/helper_scene.cpp" "/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles/pgm.dir/main/helper_scene/helper_scene.cpp.o"
   "/home/tris/Devoirs/2019-2020/INF443/project/main/main.cpp" "/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles/pgm.dir/main/main.cpp.o"
   "/home/tris/Devoirs/2019-2020/INF443/project/main/scene_base/base.cpp" "/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles/pgm.dir/main/scene_base/base.cpp.o"
+  "/home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/00_default/Character.cpp" "/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.o"
   "/home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/00_default/Hitbox.cpp" "/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.o"
   "/home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/00_default/default.cpp" "/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/default.cpp.o"
   "/home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/01_modeling/modeling.cpp" "/home/tris/Devoirs/2019-2020/INF443/project/CMakeFiles/pgm.dir/scenes/3D_graphics/01_modeling/modeling.cpp.o"

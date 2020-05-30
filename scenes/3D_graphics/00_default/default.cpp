@@ -7,6 +7,7 @@
 #include <iostream>
 #include <time.h>
 #include <random>
+#include "scenes/3D_graphics/00_default/Character.hpp"
 
 using namespace vcl;
 using namespace std;
@@ -26,6 +27,9 @@ void scene_model::setup_data(std::map<std::string,GLuint>& , scene_structure& sc
             });
 
     load_mesh_building();
+    load_mesh_background();
+    character.load();
+    character.location = {field_length /2, field_height /2};
 
     // building_positions = { {- 20.f, 0.f}, {- 20.f, 2.f}, {- 20.f, 5.f}};
     // generate_wave();
@@ -33,6 +37,7 @@ void scene_model::setup_data(std::map<std::string,GLuint>& , scene_structure& sc
     timer.scale = 0.5f;
     timer_generate_wave.scale = 0.5f;
     timer_generate_wave.periodic_event_time_step = wave_interval;
+
     
 }
 
@@ -61,6 +66,26 @@ void scene_model::frame_draw(std::map<std::string,GLuint>& shaders, scene_struct
         glBindTexture(GL_TEXTURE_2D, scene.texture_white);
     };
 
+    auto draw_background = [&shader, &scene, this](){
+        glBindTexture(GL_TEXTURE_2D, texture_background);
+        draw(mesh_background, scene.camera, shader);
+        glBindTexture(GL_TEXTURE_2D, scene.texture_white);
+    };
+
+    // // Enable use of alpha component as color blending for transparent elements
+    // //  new color = previous color + (1-alpha) current color
+    //
+    // glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER);
+    // glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
+    // glEnable(GL_BLEND);
+    // glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    //
+    // // Disable depth buffer writing
+    // //  - Transparent elements cannot use depth buffer
+    // //  - They are supposed to be display from furest to nearest elements
+    // glDepthMask(false);
+
+
     float dt = timer.update();
     timer_generate_wave.update();
 
@@ -68,10 +93,16 @@ void scene_model::frame_draw(std::map<std::string,GLuint>& shaders, scene_struct
     if (timer_generate_wave.event) generate_wave();
     garbage_collect();
 
+    draw_background();
+
     for (auto position : building_positions)
         draw_building(position);
 
 
+    character.draw(scene, shader); // handles texturing, animation etc. for the character
+
+    // glBindTexture(GL_TEXTURE_2D, scene.texture_white);
+    // glDepthMask(true);
 }
 
 
@@ -81,7 +112,7 @@ void scene_model::load_mesh_building(){
     mesh_building = bd;
 
     mesh_building.uniform.shading.specular = 0.05f; 
-    // mesh_building.uniform.transform.rotation = rotation_from_axis_angle_mat3({1, 0, 0}, M_PI / 2); 
+    // mesh_building.unifortm.transform.rotation = rotation_from_axis_angle_mat3({1, 0, 0}, M_PI / 2); 
     texture_building = create_texture_gpu( image_load_png("resources/textures/immeuble-texture2.png") );
 
     hitbox_building = Hitbox({0, 0, -building_depth}, 
@@ -89,6 +120,21 @@ void scene_model::load_mesh_building(){
 
 }
 
+void scene_model::load_mesh_background(){
+    mesh_background = mesh_primitive_quad(
+            {horizon, -background_side, background_height},
+            {horizon, background_side, background_height}, 
+            {horizon, background_side, -background_height}, 
+            {horizon, -background_side, -background_height}
+            );
+
+    mesh_background.uniform.shading.specular = 0; 
+    mesh_background.uniform.shading.diffuse = 0; 
+    mesh_background.uniform.shading.ambiant = 1; 
+    
+    texture_background = create_texture_gpu( image_load_png("resources/textures/landscape_city2.png") );
+
+}
 
 
 void scene_model::set_gui()

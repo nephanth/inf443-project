@@ -7,6 +7,7 @@
 #include <vector>
 #include <deque>
 #include "scenes/3D_graphics/00_default/Hitbox.hpp"
+#include "scenes/3D_graphics/00_default/Character.hpp"
 
 struct gui_scene_structure
 {
@@ -41,12 +42,16 @@ struct scene_model : scene_base
 
     // meshes :
     vcl::mesh_drawable mesh_building;
+    vcl::mesh_drawable mesh_background;
+    Character character;
     Hitbox hitbox_building;
     GLuint texture_building;
+    GLuint texture_background;
 
 
     private:
     void load_mesh_building();
+    void load_mesh_background();
 
 
     void update_positions(float dt);
@@ -82,15 +87,18 @@ struct scene_model : scene_base
     //general
     const float field_length = 8;
     const float field_height = 5;
-    const float curve = .1;
+    const float curve = .005;
 
     const float camera_offset = 2;
-    const float horizon = - 50; // x position where objects are generated
-    const float wave_interval = 3;
+    const float horizon = - 70; // x position where objects are generated
+    const float wave_interval = 1.5;
     //building
     const float building_height = 2;
     const float building_depth = 7; // how far down the building goes (under the field)
     const float building_side = 2; // they're square
+    //background
+    const float background_side= 80;
+    const float background_height= 50;
 
     float speed = 20;
 

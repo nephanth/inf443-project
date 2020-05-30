@@ -224,6 +224,33 @@ main/scene_base/base.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/main/scene_base/base.cpp.s
 .PHONY : main/scene_base/base.cpp.s
 
+scenes/3D_graphics/00_default/Character.o: scenes/3D_graphics/00_default/Character.cpp.o
+
+.PHONY : scenes/3D_graphics/00_default/Character.o
+
+# target to build an object file
+scenes/3D_graphics/00_default/Character.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.o
+.PHONY : scenes/3D_graphics/00_default/Character.cpp.o
+
+scenes/3D_graphics/00_default/Character.i: scenes/3D_graphics/00_default/Character.cpp.i
+
+.PHONY : scenes/3D_graphics/00_default/Character.i
+
+# target to preprocess a source file
+scenes/3D_graphics/00_default/Character.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.i
+.PHONY : scenes/3D_graphics/00_default/Character.cpp.i
+
+scenes/3D_graphics/00_default/Character.s: scenes/3D_graphics/00_default/Character.cpp.s
+
+.PHONY : scenes/3D_graphics/00_default/Character.s
+
+# target to generate assembly for a file
+scenes/3D_graphics/00_default/Character.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgm.dir/build.make CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.s
+.PHONY : scenes/3D_graphics/00_default/Character.cpp.s
+
 scenes/3D_graphics/00_default/Hitbox.o: scenes/3D_graphics/00_default/Hitbox.cpp.o
 
 .PHONY : scenes/3D_graphics/00_default/Hitbox.o
@@ -2132,6 +2159,9 @@ help:
 	@echo "... main/scene_base/base.o"
 	@echo "... main/scene_base/base.i"
 	@echo "... main/scene_base/base.s"
+	@echo "... scenes/3D_graphics/00_default/Character.o"
+	@echo "... scenes/3D_graphics/00_default/Character.i"
+	@echo "... scenes/3D_graphics/00_default/Character.s"
 	@echo "... scenes/3D_graphics/00_default/Hitbox.o"
 	@echo "... scenes/3D_graphics/00_default/Hitbox.i"
 	@echo "... scenes/3D_graphics/00_default/Hitbox.s"

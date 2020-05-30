@@ -16,6 +16,11 @@
 },
 {
   "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
+  "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/00_default/Character.cpp",
+  "file": "/home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/00_default/Character.cpp"
+},
+{
+  "directory": "/home/tris/Devoirs/2019-2020/INF443/project",
   "command": "g++  -DIMGUI_IMPL_OPENGL_LOADER_GLAD -I/home/tris/Devoirs/2019-2020/INF443/project/. -I/home/tris/Devoirs/2019-2020/INF443/project/third_party/eigen    -g -O2 -std=c++11 -Wall -Wextra -o CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.o -c /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/00_default/Hitbox.cpp",
   "file": "/home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/00_default/Hitbox.cpp"
 },
