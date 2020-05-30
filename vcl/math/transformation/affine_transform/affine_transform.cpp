@@ -18,7 +18,7 @@ affine_transform operator*(const affine_transform& T1, const affine_transform& T
     T.scaling      = T1.scaling * T2.scaling;
     T.scaling_axis = T1.scaling_axis * T2.scaling_axis;
     T.rotation     = T1.rotation * T2.rotation;
-    T.translation  = mat3::from_scaling(T1.scaling*T1.scaling_axis)*T1.rotation*T2.translation + T1.translation;
+    T.translation  = T1.rotation*mat3::from_scaling(T1.scaling*T1.scaling_axis) *T2.translation + T1.translation;
     return T;
 }
 
