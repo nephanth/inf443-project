@@ -12,14 +12,15 @@
 struct gui_scene_structure
 {
     bool wireframe = false;
-
+    bool show_hitbox = false;
+    bool is_collision = false;
 };
 
 /**
  * @brief scene de jeu
  * normalement l axe des x pointe vers l' utilisateur (camera vers -x), y et z forment un repere de face
  */
-struct scene_model : scene_base
+struct scene_model : scene_base 
 {
 
     /** A part must define two functions that are called from the main function:
@@ -35,6 +36,9 @@ struct scene_model : scene_base
 
     void setup_data(std::map<std::string,GLuint>& shaders, scene_structure& scene, gui_structure& gui);
     void frame_draw(std::map<std::string,GLuint>& shaders, scene_structure& scene, gui_structure& gui);
+    // void keyboard_input(scene_structure& scene, GLFWwindow* window, int key, int scancode, int action, int mods); // we use direct opengl interface because we don’t need callbacks
+
+
 
     void set_gui();
     gui_scene_structure gui_scene;
@@ -43,15 +47,18 @@ struct scene_model : scene_base
     // meshes :
     vcl::mesh_drawable mesh_building;
     vcl::mesh_drawable mesh_background;
+    vcl::mesh_drawable mesh_game_over;
     Character character;
     Hitbox hitbox_building;
     GLuint texture_building;
     GLuint texture_background;
+    GLuint texture_game_over;
 
 
     private:
     void load_mesh_building();
     void load_mesh_background();
+    void load_mesh_game_over();
 
 
     void update_positions(float dt);
@@ -60,6 +67,21 @@ struct scene_model : scene_base
      * @brief adds elements at the end of the positions queue
      */
     void generate_wave();
+
+
+    /**
+     * @brief detects collision with the character
+     *
+     * @return true if the character collides with an object
+     */
+    bool detect_collision();
+
+    /**
+     * @brief too bad if you're out of field you lose
+     *
+     * @return true if you lose, false otherwise
+     */
+    bool out_of_field();
 
     /**
      * @brief removes out of view objects
@@ -85,13 +107,14 @@ struct scene_model : scene_base
 
     //constants 
     //general
+    const float drop_angle= M_PI / 24; //for the camera
     const float field_length = 8;
-    const float field_height = 5;
+    const float field_height = 4;
     const float curve = .005;
 
     const float camera_offset = 2;
     const float horizon = - 70; // x position where objects are generated
-    const float wave_interval = 1.5;
+    const float wave_interval = 1.5; //seconds
     //building
     const float building_height = 2;
     const float building_depth = 7; // how far down the building goes (under the field)
@@ -101,6 +124,8 @@ struct scene_model : scene_base
     const float background_height= 50;
 
     float speed = 20;
+
+    bool game_over = false;
 
 
 

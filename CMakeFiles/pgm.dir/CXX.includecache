@@ -192,6 +192,20 @@ camera.hpp
 ../../math/mat/mat3/mat3.hpp
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat3/mat3.hpp
 
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/camera_control_glfw/camera_control_glfw.cpp
+camera_control_glfw.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/camera_control_glfw/camera_control_glfw.hpp
+
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/camera_control_glfw/camera_control_glfw.hpp
+../camera/camera.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/camera/camera.hpp
+GLFW/glfw3.h
+-
+
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/picking/info/picking_info.cpp
+picking_info.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/picking/info/picking_info.hpp
+
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/picking/info/picking_info.hpp
 vcl/math/vec/vec3/vec3.hpp
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/picking/info/vcl/math/vec/vec3/vec3.hpp
@@ -220,6 +234,16 @@ vcl/math/vec/vec3/vec3.hpp
 vcl/interaction/camera/camera.hpp
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/interaction/picking/ray/vcl/interaction/camera/camera.hpp
 
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/helper_functions/linspace/linspace.cpp
+linspace.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/helper_functions/linspace/linspace.hpp
+
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/helper_functions/linspace/linspace.hpp
+vcl/containers/buffer/buffer.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/helper_functions/linspace/vcl/containers/buffer/buffer.hpp
+vcl/math/vec/vec.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/helper_functions/linspace/vcl/math/vec/vec.hpp
+
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat.hpp
 mat/mat.hpp
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat/mat.hpp
@@ -238,11 +262,23 @@ array
 cassert
 -
 
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat2/mat2.cpp
+mat2.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat2/mat2.hpp
+iostream
+-
+
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat2/mat2.hpp
 ../mat/mat.hpp
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat/mat.hpp
 ../../vec/vec2/vec2.hpp
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/vec/vec2/vec2.hpp
+
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat3/mat3.cpp
+mat3.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat3/mat3.hpp
+iostream
+-
 
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat3/mat3.hpp
 ../mat/mat.hpp
@@ -250,6 +286,16 @@ cassert
 ../../vec/vec3/vec3.hpp
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/vec/vec3/vec3.hpp
 vector
+-
+
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat4/mat4.cpp
+mat4.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat4/mat4.hpp
+../../mat/mat3/mat3.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat3/mat3.hpp
+../../vec/vec3/vec3.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/vec/vec3/vec3.hpp
+iostream
 -
 
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/mat/mat4/mat4.hpp
@@ -304,6 +350,14 @@ vcl/containers/containers.hpp
 vcl/containers/buffer_stack/buffer_stack.hpp
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/vec/vec2/vcl/containers/buffer_stack/buffer_stack.hpp
 
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/vec/vec3/vec3.cpp
+vec3.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/vec/vec3/vec3.hpp
+iostream
+-
+vcl/base/base.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/math/vec/vec3/vcl/base/base.hpp
+
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/vec/vec3/vec3.hpp
 vcl/containers/buffer_stack/buffer_stack.hpp
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/math/vec/vec3/vcl/containers/buffer_stack/buffer_stack.hpp
@@ -325,6 +379,16 @@ vcl/containers/buffer/buffer2D/buffer2D.hpp
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/texture/image/vcl/containers/buffer/buffer2D/buffer2D.hpp
 vcl/math/vec/vec3/vec3.hpp
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/texture/image/vcl/math/vec/vec3/vec3.hpp
+
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/texture/texture_gpu/texture_gpu.cpp
+texture_gpu.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/texture/texture_gpu/texture_gpu.hpp
+
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/texture/texture_gpu/texture_gpu.hpp
+vcl/wrapper/glad/glad.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/texture/texture_gpu/vcl/wrapper/glad/glad.hpp
+../image/image.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/texture/image/image.hpp
 
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/opengl/uniform/uniform.cpp
 uniform.hpp
@@ -363,6 +427,14 @@ curve_dynamic_drawable.hpp
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_dynamic_drawable/curve_dynamic_drawable.hpp
 ../curve_drawable/curve_drawable.hpp
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_drawable/curve_drawable.hpp
+
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_gpu/curve_gpu.cpp
+curve_gpu.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_gpu/curve_gpu.hpp
+vcl/base/base.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_gpu/vcl/base/base.hpp
+vcl/opengl/debug/opengl_debug.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_gpu/vcl/opengl/debug/opengl_debug.hpp
 
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/curve/curve_gpu/curve_gpu.hpp
 vcl/wrapper/glad/glad.hpp
@@ -464,6 +536,22 @@ mesh_drawable_uniform.hpp
 vcl/math/math.hpp
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_drawable/mesh_drawable_uniform/vcl/math/math.hpp
 
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_loader/obj/obj.cpp
+obj.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_loader/obj/obj.hpp
+vcl/base/base.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_loader/obj/vcl/base/base.hpp
+map
+-
+fstream
+-
+sstream
+-
+
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_loader/obj/obj.hpp
+../../mesh_structure/mesh.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_structure/mesh.hpp
+
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_primitive/mesh_primitive.cpp
 mesh_primitive.hpp
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/mesh/mesh_primitive/mesh_primitive.hpp
@@ -526,12 +614,34 @@ segments_drawable_uniform.hpp
 vcl/math/math.hpp
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segments_drawable/segments_drawable_uniform/vcl/math/math.hpp
 
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segments_gpu/segments_gpu.cpp
+segments_gpu.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segments_gpu/segments_gpu.hpp
+vcl/base/base.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segments_gpu/vcl/base/base.hpp
+vcl/opengl/debug/opengl_debug.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segments_gpu/vcl/opengl/debug/opengl_debug.hpp
+
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segments_gpu/segments_gpu.hpp
 vcl/wrapper/glad/glad.hpp
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segments_gpu/vcl/wrapper/glad/glad.hpp
 vcl/math/vec/vec3/vec3.hpp
 /home/tris/Devoirs/2019-2020/INF443/project/vcl/shape/segment/segments_gpu/vcl/math/vec/vec3/vec3.hpp
 vector
+-
+
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/lodepng/lodepng.cpp
+lodepng.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/lodepng/lodepng.hpp
+iostream
+-
+
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/lodepng/lodepng.hpp
+third_party/lodepng/lodepng.h
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/lodepng/third_party/lodepng/lodepng.h
+vcl/opengl/texture/image/image.hpp
+/home/tris/Devoirs/2019-2020/INF443/project/vcl/wrapper/lodepng/vcl/opengl/texture/image/image.hpp
+string
 -
 
 main/helper_scene/helper_scene.hpp
@@ -565,6 +675,8 @@ scenes/3D_graphics/00_default/vcl/shape/hierarchy_mesh/hierarchy_mesh_drawable/h
 scenes/3D_graphics/00_default/Hitbox.hpp
 vcl/vcl.hpp
 scenes/3D_graphics/00_default/vcl/vcl.hpp
+main/helper_scene/helper_scene.hpp
+scenes/3D_graphics/00_default/main/helper_scene/helper_scene.hpp
 
 scenes/3D_graphics/00_default/default.hpp
 main/scene_base/base.hpp

@@ -19,6 +19,7 @@
 #pragma once
 
 #include "vcl/vcl.hpp"
+#include "main/helper_scene/helper_scene.hpp"
 
 using namespace vcl;
 
@@ -40,9 +41,16 @@ struct Hitbox{ //
     vec3 v;
 
 
+
     bool contains (vec3 a);
     bool collision(Hitbox h);
 
     bool out_of_x_bound(float x);
+
+    void draw(camera_scene& camera, GLuint shader);
+
+    private:
+        mesh_drawable as_mesh;
+        bool mesh_defined = false;
 };
 

@@ -385,6 +385,7 @@ CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.o
  vcl/wrapper/wrapper.hpp
 CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.o
  /home/tris/Devoirs/2019-2020/INF443/project/scenes/3D_graphics/00_default/Hitbox.cpp
+ main/helper_scene/helper_scene.hpp
  scenes/3D_graphics/00_default/Hitbox.hpp
  third_party/glad/include/glad/glad.hpp
  third_party/imgui/imconfig.h

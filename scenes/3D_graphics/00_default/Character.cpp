@@ -68,7 +68,8 @@ void Character::load() {
     
     
     timer.start();
-    time_begun_movement = 0;
+    time_begun_movement = -10;
+
 }
 
 
@@ -91,6 +92,18 @@ void Character::animate(){
         rotation_from_axis_angle_mat3( {0, 0, 1}, - forewing_movement_amplitude * cos(theta) );
     (*this)["forewing_l"].transform.rotation = 
         rotation_from_axis_angle_mat3( {0, 0, 1}, forewing_movement_amplitude * cos(theta) );
+}
+
+void Character::get_input(float dt, GLFWwindow* window){
+    if (glfwGetKey(window,  key_left) == GLFW_PRESS){
+        angle = min(angle_bound, angle + turning_speed * dt);
+    }
+    if (glfwGetKey(window,  key_right) == GLFW_PRESS){
+        angle = max(- angle_bound, angle - turning_speed * dt);
+    }
+    if (glfwGetKey(window,  key_jump) == GLFW_PRESS && (timer.t >= time_begun_movement + jump_duration)){
+        time_begun_movement = timer.t;
+    }
 }
 
 void Character::move(float dt){
@@ -117,11 +130,21 @@ void Character::move(float dt){
 }
 
 Hitbox Character::hitbox() const{
-    return Hitbox(vec3(0,location.x, location.y), vec3(lx, ly, lz));
+    // no exact formulae, just good approximations 
+    const float t = timer.t - time_begun_movement;
+    const float omega =  M_PI / jump_duration;
+    const float theta  = t <= (2 * jump_duration) ? omega * t : 0; //animation lasts twice the effective jump time
+    const float ly_anim = ly * ( 1 + abs(sin(theta))) / 2;
+    const float z_anim = location.y - lz* sin( theta / 2); 
+    const float y_offset = sin(angle) / 4 * ly;
+
+    return Hitbox(vec3(0,location.x - ly_anim/2 - y_offset, z_anim), vec3(lx, ly_anim, lz));
 }
 
-void Character::draw(scene_structure& scene, GLuint shader) {
-    move(timer.update());
+void Character::draw(scene_structure& scene, GLuint shader, GLFWwindow* window) {
+    const float dt = timer.update();
+    get_input(dt, window);
+    move(dt);
     animate();
     update_local_to_global_coordinates();
     vcl::draw(*this, scene.camera, shader);

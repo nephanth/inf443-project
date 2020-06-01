@@ -28,17 +28,19 @@ class Character : public hierarchy_mesh_drawable {
 
         void animate();
         void move(float dt);
+        void get_input(float dt, GLFWwindow* window);
 
-        void draw(scene_structure& scene, GLuint shader);
+        void draw(scene_structure& scene, GLuint shader, GLFWwindow* window);
 
         Hitbox hitbox() const;
 
         vec2 location;
 
-
-        float angle = -M_PI / 4;
+        float angle = 0;
 
     protected:
+
+
         vcl::timer_basic timer;
         float time_begun_movement;
         vec2 speed;
@@ -63,22 +65,27 @@ class Character : public hierarchy_mesh_drawable {
 
         mat3 wing_base_rotation;
 
+        const float global_scale = .1;
 
-        const float lx = 1.;
-        const float ly = 1.;
-        const float lz = 2.;
+        const float lx = global_scale * .5;
+        const float ly = global_scale * 2.;
+        const float lz = global_scale * 1.;
 
         const vec2 g = {0, -1}; // downwards acceleration (so-called gravity)
-        const float jump_acceleration = 2;
-        const float friction_factor = .1;
+        const float jump_acceleration = 4;
+        const float friction_factor = .4;
 
-        const float global_scale = .8;
 
         const float backwing_movement_amplitude = M_PI / 4;
         const float forewing_movement_amplitude = M_PI / 6;
 
-        const float jump_duration = .5;
+        const float jump_duration = .3;
 
         const float angle_bound = M_PI / 4;
+        const float turning_speed = M_PI / 2;
+
+        const int key_right = GLFW_KEY_RIGHT;
+        const int key_left = GLFW_KEY_LEFT;
+        const int key_jump = GLFW_KEY_SPACE;
 
 };

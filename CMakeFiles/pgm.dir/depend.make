@@ -384,6 +384,7 @@ CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.o: vcl/wrapper/pe
 CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Character.cpp.o: vcl/wrapper/wrapper.hpp
 
 CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.o: scenes/3D_graphics/00_default/Hitbox.cpp
+CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.o: main/helper_scene/helper_scene.hpp
 CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.o: scenes/3D_graphics/00_default/Hitbox.hpp
 CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.o: third_party/glad/include/glad/glad.hpp
 CMakeFiles/pgm.dir/scenes/3D_graphics/00_default/Hitbox.cpp.o: third_party/imgui/imconfig.h
