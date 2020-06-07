@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+
+Rapport inf443
+Brugere Tristan
+
+
+language=C++,
+                basicstyle=,
+                keywordstyle=,
+                stringstyle=,
+                commentstyle=,
+                morecomment=[l][]
+
+
+Introduction
+Le but du projet était de faire un jeu simple où un pigeon volant en ligne droite devrait éviter des immeubles.
+Le plus simple pour comprendre le gameplay est soit de lancer l’éxécutable pgm, soit de regarder la vidéo « smaller.mp4 » montrant le gameplay.
+
+compilation
+Pour compiler le jeu, il suffit de se placer dans un répertoire où l’on veut construire l’executable, disons build/
+et de taper les commandes : 
+[language=bash]
+ make # compiler le projet
+
+Après cela, on peut lancer le programme avec la commande
+
+[language=bash]
+offsetcamera + buildingsize

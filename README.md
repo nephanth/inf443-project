@@ -1,4 +1,8 @@
-# VCL
+# Projet
+Vous trouverez le rapport du projet (ainsi que les instructuions de compilation) dans rapport.pdf, 
+et la vidéo dans smaller.mp4
+
+[#](#) VCL
 
 - [Introduction](#Introduction)
 - [Compile the library](#Compilation)

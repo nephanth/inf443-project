@@ -202,7 +202,7 @@ float scene_model::earth_curve(float x){
     if (x<0) 
         return - curve * (x*x) ;
     else 
-        return - 20 * curve * (x*x); // to make things go under the camera
+        return - 20 * curve * (x*x); // to make buildings go under the camera (instead of into the camera)
 }
 
 bool scene_model::detect_collision(){

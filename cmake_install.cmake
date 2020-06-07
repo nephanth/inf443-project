@@ -1,4 +1,4 @@
-# Install script for directory: /home/tris/Devoirs/2019-2020/INF443/project
+# Install script for directory: /home/tris/Devoirs/current/INF443/project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tris/Devoirs/2019-2020/INF443/project/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tris/Devoirs/current/INF443/project/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
